@@ -14,7 +14,6 @@ export default function VideoPlayer({ src, title, controls = false, loop = true 
     const video = videoRef.current
     if (!video) return
 
-    // Ensure autoplay + mute compatibility for Safari
     video.muted = true
     video.playsInline = true
 
@@ -22,14 +21,12 @@ export default function VideoPlayer({ src, title, controls = false, loop = true 
       const playPromise = video.play()
       if (playPromise !== undefined) {
         playPromise.catch(() => {
-          // If autoplay is blocked, try again silently
           video.muted = true
           video.play().catch(() => {})
         })
       }
     }
 
-    // Intersection Observer: play/pause based on visibility
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,7 +37,7 @@ export default function VideoPlayer({ src, title, controls = false, loop = true 
           }
         })
       },
-      { threshold: 0.5 }, // at least 25% visible to play
+      { threshold: 0.5 },
     )
 
     observer.observe(video)

@@ -9,5 +9,5 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
   },
-  base: '/', // Must match root deployment
+  base: './', // relative paths for production
 })
