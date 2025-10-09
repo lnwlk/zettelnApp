@@ -37,24 +37,31 @@ Datenschutz App Deutschland, einfache Formulare, Verwaltung verstehen lernen"
     <meta name="twitter:image" content="https://zetteln.app/zettelnopengraph-2.jpg" />
   </head>
   <body>
+    <div id="root"></div>
     <!-- TWIPLA Tracking Code for zetteln.app -->
     <script>
-      if (import.meta.env.MODE === 'production') {
-        (function(v,i,s,a,t){
-          v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};
-          if(!v._visaSettings){v._visaSettings={}}
-          v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};
-          var b=i.getElementsByTagName('body')[0];
-          var p=i.createElement('script');
-          p.defer=1;
-          p.async=1;
-          p.src=s+'?s='+a;
-          b.appendChild(p);
-        })(window,document,'//app-worker.visitor-analytics.io/main.js','83a804a4-a4f9-11f0-84e1-960004340fd3','va');
+      // Simple check to avoid loading on localhost
+      if (window.location.hostname !== 'localhost') {
+        ;(function (v, i, s, a, t) {
+          v[t] =
+            v[t] ||
+            function () {
+              ;(v[t].v = v[t].v || []).push(arguments)
+            }
+          if (!v._visaSettings) {
+            v._visaSettings = {}
+          }
+          v._visaSettings[a] = { v: '1.0', s: a, a: '1', t: t }
+          var b = i.getElementsByTagName('body')[0]
+          var p = i.createElement('script')
+          p.defer = 1
+          p.async = 1
+          p.src = s + '?s=' + a
+          b.appendChild(p)
+        })(window, document, '//app-worker.visitor-analytics.io/main.js', '83a804a4-a4f9-11f0-84e1-960004340fd3', 'va')
       }
     </script>
 
-    <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
