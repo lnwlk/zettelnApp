@@ -21,6 +21,10 @@
       "dest": "/favicon.ico"
     },
     {
+      "src": "/videos/(.*)",
+      "dest": "/videos/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
