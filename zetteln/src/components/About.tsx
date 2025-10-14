@@ -15,7 +15,7 @@ export default function About() {
           kontinuierlich, während die personelle Ausstattung stagniert. Die Folge ist eine zunehmend überforderte
           Verwaltung, was sich besonders in Ausländer- und Sozialbehörden sowie Jugendämtern zeigt.
           <br /> <br />
-          Technologie, vor allem KI, kann hier richtig helfen. Wenn sie ethisch, datenschutzkonform und im Intresse der
+          Technologie, vor allem KI, kann hier richtig helfen. Wenn sie ethisch, datenschutzkonform und im Interesse der
           Nutzer:innen eingesetzt wird. Auf diesen Grundlagen ist die Idee für eine App enstanden, die Menschen mit
           sprachlichen Hürden, Leseschwierigkeiten oder geringer digitaler Kompetenz unterstützt, sich im deutsche
           Behördensystem zurecht zu finden.
