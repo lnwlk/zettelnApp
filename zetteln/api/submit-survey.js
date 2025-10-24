@@ -1,16 +1,13 @@
 export default async function handler(req, res) {
-  // CORS Headers ZUERST!
   res.setHeader('Access-Control-Allow-Credentials', 'true')
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
-  // OPTIONS Handler (Browser Preflight)
   if (req.method === 'OPTIONS') {
     return res.status(200).end()
   }
 
-  // Nur POST erlauben
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
@@ -18,18 +15,41 @@ export default async function handler(req, res) {
   const NOTION_TOKEN = process.env.NOTION_TOKEN
   const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID
 
-  console.log('✅ Handler called with POST')
-  console.log('ENV:', { hasToken: !!NOTION_TOKEN, hasDbId: !!NOTION_DATABASE_ID })
-
   if (!NOTION_TOKEN || !NOTION_DATABASE_ID) {
-    console.error('❌ Missing env vars')
     return res.status(500).json({ error: 'Server config missing' })
   }
 
   try {
     const { answers, language, timestamp } = req.body
 
-    console.log('📊 Received data:', { language, answerKeys: Object.keys(answers || {}) })
+    console.log('📊 Received:', { language, keys: Object.keys(answers || {}) })
+
+    // Helper: Konvertiere Antwort zu String
+    const answerToString = (answer) => {
+      if (!answer) return ''
+
+      // Array (Multiple Choice)
+      if (Array.isArray(answer)) {
+        return answer.join(', ')
+      }
+
+      // Object mit selected (Single Choice)
+      if (answer.selected) {
+        return answer.followUp ? `${answer.selected} - ${answer.followUp}` : answer.selected
+      }
+
+      // Object mit selections (Multiple Choice mit other)
+      if (answer.selections) {
+        let result = answer.selections.join(', ')
+        if (answer.otherText) {
+          result += ` (Sonstiges: ${answer.otherText})`
+        }
+        return result
+      }
+
+      // Plain string
+      return String(answer)
+    }
 
     const notionResponse = await fetch('https://api.notion.com/v1/pages', {
       method: 'POST',
@@ -47,15 +67,44 @@ export default async function handler(req, res) {
           Language: {
             rich_text: [{ text: { content: language || 'de' } }],
           },
-          Answers: {
-            rich_text: [{ text: { content: JSON.stringify(answers).substring(0, 2000) } }],
+          Languages: {
+            rich_text: [{ text: { content: answerToString(answers.languages) } }],
+          },
+          Name: {
+            rich_text: [{ text: { content: answers.name || '' } }],
+          },
+          Frequency: {
+            rich_text: [{ text: { content: answerToString(answers.frequency) } }],
+          },
+          Challenges: {
+            rich_text: [{ text: { content: answerToString(answers.challenges) } }],
+          },
+          LetterScenario: {
+            rich_text: [{ text: { content: answerToString(answers.letterScenario) } }],
+          },
+          HelpSource: {
+            rich_text: [{ text: { content: answerToString(answers.helpSource) } }],
+          },
+          MissedDeadline: {
+            rich_text: [{ text: { content: answerToString(answers.missedDeadline) } }],
+          },
+          Organization: {
+            rich_text: [{ text: { content: answerToString(answers.organization) } }],
+          },
+          OrganizationSuccess: {
+            rich_text: [{ text: { content: answerToString(answers.organizationSuccess) } }],
+          },
+          AppPriorities: {
+            rich_text: [{ text: { content: answerToString(answers.appPriorities) } }],
+          },
+          TryApp: {
+            rich_text: [{ text: { content: answerToString(answers.tryApp) } }],
           },
         },
       }),
     })
 
     const responseText = await notionResponse.text()
-    console.log('Notion status:', notionResponse.status)
 
     if (!notionResponse.ok) {
       console.error('❌ Notion error:', responseText)
