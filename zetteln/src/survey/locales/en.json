@@ -1,0 +1,204 @@
+{
+  "survey": {
+    "title": "Your Experience with Government Offices",
+    "subtitle": "Help us build a better app",
+    "duration": "Duration: about 5 minutes",
+    "anonymous": "Anonymous & confidential",
+    
+    "navigation": {
+      "next": "Next",
+      "back": "Back",
+      "submit": "Submit",
+      "skip": "Skip"
+    },
+    
+    "progress": "Question {{current}} of {{total}}",
+    
+    "consent": {
+      "title": "Consent",
+      "text": "I agree that my responses will be used anonymously for the development of the zetteln app.\n\nMy data will be:\n- Stored anonymously (no names, no emails)\n- Used only for this project\n- Deleted after the project\n\nDo you agree?",
+      "yes": "Yes, I agree",
+      "no": "No"
+    },
+    
+    "sections": {
+      "about": "About You",
+      "challenges": "Your Challenges",
+      "digital": "Digital Habits",
+      "wishes": "Your Wishes"
+    },
+    
+    "questions": {
+      "age": {
+        "question": "How old are you?",
+        "options": {
+          "under25": "Under 25 years",
+          "25to34": "25-34 years",
+          "35to44": "35-44 years",
+          "45to54": "45-54 years",
+          "over55": "55+ years"
+        }
+      },
+      
+      "languages": {
+        "question": "Which languages do you speak?",
+        "hint": "Multiple selection possible",
+        "options": {
+          "german": "German",
+          "english": "English",
+          "arabic": "Arabic",
+          "turkish": "Turkish",
+          "russian": "Russian",
+          "ukrainian": "Ukrainian",
+          "other": "Other"
+        },
+        "otherPlaceholder": "Which language?"
+      },
+      
+      "frequency": {
+        "question": "How often do you deal with government offices?",
+        "options": {
+          "multiple": "Multiple times per month",
+          "monthly": "Once a month",
+          "few": "A few times a year",
+          "rarely": "Rarely"
+        }
+      },
+      
+      "challenges": {
+        "question": "What do you find most difficult about dealing with government offices?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "language": "The language is too complicated",
+          "documents": "I don't know which documents I need",
+          "deadlines": "I don't understand the deadlines",
+          "forms": "Filling out forms is difficult",
+          "organization": "I can't find my documents",
+          "help": "I don't know where to get help",
+          "appointments": "Appointments are hard to get",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
+      },
+      
+      "letterScenario": {
+        "question": "Imagine: You receive a letter from the job center or immigration office. What do you do first?",
+        "options": {
+          "understand": "I read it myself and usually understand it",
+          "askHelp": "I read it but need to ask someone",
+          "giveAway": "I immediately give it to someone who helps me",
+          "translate": "I use Google Translate or similar apps",
+          "postpone": "I put it aside for now"
+        }
+      },
+      
+      "helpSource": {
+        "question": "Who usually helps you with government matters?",
+        "hint": "Multiple selection possible",
+        "options": {
+          "family": "Family or friends",
+          "counseling": "Counseling centers (Caritas, Diakonie, etc.)",
+          "socialWorker": "Social workers",
+          "interpreter": "Interpreters",
+          "alone": "No one, I do everything alone",
+          "other": "Other"
+        },
+        "otherPlaceholder": "Who?"
+      },
+      
+      "missedDeadline": {
+        "question": "Have you ever missed something important (deadline, appointment, document) because you didn't understand a letter?",
+        "options": {
+          "multiple": "Yes, multiple times",
+          "once": "Yes, once",
+          "never": "No, never",
+          "unsure": "I'm not sure"
+        }
+      },
+      
+      "organization": {
+        "question": "How do you organize your important documents?",
+        "hint": "Multiple selection possible",
+        "options": {
+          "folder": "I have a folder at home",
+          "bag": "I keep everything in a bag/drawer",
+          "photos": "I take photos with my phone",
+          "noSystem": "I don't have a fixed method",
+          "lose": "I often lose important papers",
+          "other": "Other"
+        },
+        "otherPlaceholder": "How?"
+      },
+      
+      "smartphoneUsage": {
+        "question": "Do you use your smartphone for important things?",
+        "options": {
+          "daily": "Yes, very often (daily)",
+          "sometimes": "Yes, sometimes (a few times per week)",
+          "rarely": "No, rarely",
+          "noPhone": "I don't have a smartphone"
+        }
+      },
+      
+      "appUsage": {
+        "question": "Have you ever used an app to help with government matters?",
+        "options": {
+          "yes": "Yes",
+          "noButWould": "No, but I would try it",
+          "noWont": "No, I don't want to use an app for this"
+        },
+        "whichApp": "Which app?"
+      },
+      
+      "appPriorities": {
+        "question": "What is most important to you in an app for government help?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "privacy": "My data stays on my phone (not in the cloud)",
+          "free": "The app is free",
+          "simpleLanguage": "Simple language that I understand",
+          "multilingual": "I can use the app in my language",
+          "guidance": "The app explains what I need to do",
+          "organization": "I can organize my documents there",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What?"
+      },
+      
+      "perfectHelp": {
+        "question": "If you could wish for perfect help with government matters – what should it be able to do?",
+        "placeholder": "Write your ideas here..."
+      },
+      
+      "tryApp": {
+        "question": "Would you try a free app that helps you understand government letters and fill out forms?",
+        "options": {
+          "yes": "Yes, definitely",
+          "maybe": "Yes, maybe",
+          "no": "No",
+          "dontKnow": "I don't know"
+        }
+      },
+      
+      "email": {
+        "question": "Would you like to stay informed about the project?",
+        "yes": "Yes, please!",
+        "no": "No, thanks",
+        "placeholder": "Your email address"
+      }
+    },
+    
+    "thanks": {
+      "title": "Thank you! 🙏",
+      "message": "Your responses help us develop an app that is truly useful.",
+      "next": "We will use the results to make zetteln even better.",
+      "home": "Back to home"
+    },
+    
+    "errors": {
+      "required": "Please select an answer",
+      "maxSelections": "You can select a maximum of {{max}} answers",
+      "generic": "An error occurred. Please try again."
+    }
+  }
+}

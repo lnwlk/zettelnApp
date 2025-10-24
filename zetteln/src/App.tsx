@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import AppWaitlistPage from './pages/AppWaitlistPage'
 import HomePage from './pages/HomePage'
 import ImprintPage from './pages/ImprintPage'
+import SurveyUserPage from './pages/SurveyUserPage'
 
 export default function App() {
   return (
@@ -13,8 +14,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/imprint" element={<ImprintPage />} />
-
         <Route path="/AppWaitlist" element={<AppWaitlistPage />} />
+        <Route path="/SurveyUser" element={<SurveyUserPage />} />
       </Routes>
 
       <Footer />

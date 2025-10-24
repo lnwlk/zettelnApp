@@ -1,0 +1,187 @@
+{
+  "survey": {
+    "title": "Deine Erfahrungen mit Behörden",
+    "subtitle": "Hilf uns, eine bessere App zu entwickeln",
+    "duration": "Dauer: ca. 5 Minuten",
+    "anonymous": "Anonym & vertraulich",
+
+    "navigation": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "submit": "Absenden",
+      "skip": "Überspringen"
+    },
+
+    "progress": "Frage {{current}} von {{total}}",
+
+    "consent": {
+      "title": "Einwilligung",
+      "text": "Ich bin einverstanden, dass meine Antworten anonym für die Entwicklung der zetteln-App genutzt werden.\n\nMeine Daten werden:\n- Anonym gespeichert (keine Namen, keine E-Mails)\n- Nur für dieses Projekt verwendet\n- Nach dem Projekt gelöscht\n\nBist du einverstanden?",
+      "yes": "Ja, ich stimme zu",
+      "no": "Nein"
+    },
+
+    "sections": {
+      "about": "Über dich",
+      "challenges": "Deine Herausforderungen",
+      "digital": "Digitale Gewohnheiten",
+      "wishes": "Deine Wünsche"
+    },
+
+    "questions": {
+      "languages": {
+        "question": "Welche Sprachen sprichst du?",
+        "hint": "Mehrfachauswahl möglich",
+        "options": {
+          "german": "Deutsch",
+          "english": "Englisch",
+          "arabic": "Arabisch",
+          "turkish": "Türkisch",
+          "russian": "Russisch",
+          "ukrainian": "Ukrainisch",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Welche Sprache?"
+      },
+
+      "name": {
+        "question": "Was ist dein Vorname?",
+        "placeholder": "Dein Name"
+      },
+
+      "frequency": {
+        "question": "Wie oft hast du mit Behörden zum Beispiel Jobcenter, Ausländerbehörde oder Jugendamt zu tun? ",
+        "options": {
+          "multiple": "Fast jede Woche",
+          "monthly": "Einmal im Monat",
+          "few": "Ein paar Mal im Jahr",
+          "rarely": "Selten"
+        }
+      },
+
+      "challenges": {
+        "question": "Was findest du am schwierigsten wenn du mit einer Behörde sprichst?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "language": "Die Sprache ist zu kompliziert",
+          "documents": "Ich weiß nicht, welche Dokumente ich brauche",
+          "deadlines": "Ich verstehe die Fristen nicht",
+          "forms": "Formulare ausfüllen ist schwer",
+          "organization": "Ich finde meine Dokumente nicht",
+          "help": "Ich weiß nicht, wo ich Hilfe bekomme",
+          "appointments": "Termine sind schwer zu bekommen",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
+      },
+
+      "letterScenario": {
+        "question": "Stell dir vor: Du bekommst einen Brief vom Jobcenter. Was machst du zuerst?",
+        "options": {
+          "understand": "Ich lese ihn selbst und verstehe ihn meistens",
+          "askHelp": "Ich lese ihn, aber muss jemanden fragen",
+          "translate": "Ich benutze Google Translate oder ähnliche Apps",
+          "giveAwayDirect": "Ich mache ein Foto und schicke es per WhatsApp einer Person",
+          "giveAwayOnline": "Ich warte bis ich eine Person treffe, die mir helfen kann",
+          "giveAwayOrganisation": "Ich gehe zu einer Beratungsstelle oder einer Sozialarbeiter:in",
+          "postpone": "Ich lege ihn erstmal zur Seite"
+        }
+      },
+
+      "helpSource": {
+        "question": "Wer hilft dir normalerweise bei Behördensachen?",
+        "hint": "Mehrfachauswahl möglich",
+        "options": {
+          "family": "Familie oder Freunde",
+          "counseling": "Beratungsstellen (Caritas, Diakonie, etc.)",
+          "socialWorker": "Sozialarbeiter:in oder Familienhelfer:in",
+          "alone": "Niemand, ich mache alles alleine",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Wer?"
+      },
+
+      "missedDeadline": {
+        "question": "Hast du schon mal etwas Wichtiges verpasst (Frist, Termin), weil du einen Brief nicht verstanden hast?",
+        "options": {
+          "multiple": "Ja, mehrmals",
+          "once": "Ja, einmal",
+          "never": "Nein, noch nie",
+          "unsure": "Ich bin mir nicht sicher"
+        }
+      },
+
+      "organization": {
+        "question": "Wie organisierst du deine wichtigen Dokumente?",
+        "hint": "Mehrfachauswahl möglich",
+        "options": {
+          "folder": "Ich habe einen Ordner zu Hause",
+          "bag": "Ich bewahre alles in einer Tasche/Schublade auf",
+          "photos": "Ich mache Fotos mit dem Handy",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Wie?"
+      },
+
+      "organizationSuccess": {
+        "question": "Wie gut klappt die Organisation deiner Dokumente?",
+        "options": {
+          "good": "Super! Ich finde immer alles",
+          "sometimes": "Ich muss lange suchen, aber finde es meistens",
+          "help": "Ohne Hilfe finde ich Dokumente nicht",
+          "lose": "Oft gehen Papiere verloren"
+        }
+      },
+
+      "appPriorities": {
+        "question": "Stell dir vor: Eine App hilft dir mit Briefen. Was ist dir am wichtigsten?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "privacy": "Meine Daten bleiben Privatsache und werden nicht weitergegeben",
+          "free": "Die App ist kostenlos",
+          "simpleLanguage": "Einfache Sprache, die ich verstehe",
+          "multilingual": "Ich kann die App in meiner Sprache nutzen",
+          "guidance": "Die App erklärt mir, was ich tun muss",
+          "organization": "Ich kann meine Dokumente dort sortieren",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was?"
+      },
+
+      "perfectHelp": {
+        "question": "Hast du noch Ideen, wie dir eine App bei Behördensachen helfen könnte?",
+        "placeholder": "Schreib hier deine Ideen..."
+      },
+
+      "tryApp": {
+        "question": "Möchtest du die App testen, wenn sie fertig ist?",
+        "options": {
+          "yes": "Ja, auf jeden Fall",
+          "maybe": "Ja, vielleicht",
+          "no": "Nein",
+          "dontKnow": "Ich weiß nicht"
+        }
+      },
+
+      "email": {
+        "question": "Möchtest du über das Projekt informiert bleiben?",
+        "yes": "Ja, gerne!",
+        "no": "Nein, danke",
+        "placeholder": "Deine E-Mail-Adresse"
+      }
+    },
+
+    "thanks": {
+      "title": "Vielen Dank! 🙏",
+      "message": "Deine Antworten helfen uns, eine App zu entwickeln, die wirklich nützlich ist.",
+      "next": "Wir werden die Ergebnisse nutzen, um zetteln noch besser zu machen.",
+      "home": "Zur Startseite"
+    },
+
+    "errors": {
+      "required": "Bitte wähle eine Antwort",
+      "maxSelections": "Du kannst maximal {{max}} Antworten wählen",
+      "generic": "Ein Fehler ist aufgetreten. Bitte versuche es erneut."
+    }
+  }
+}
