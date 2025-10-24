@@ -6,7 +6,7 @@ import QuestionScreen from './components/QuestionScreen'
 import { questions } from './questions'
 
 function Survey() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [currentStep, setCurrentStep] = useState(0)
   const [answers, setAnswers] = useState({})
   const [hasConsented, setHasConsented] = useState(false)
@@ -55,7 +55,13 @@ function Survey() {
   }
 
   const handleSubmit = async () => {
+    console.log('🚀 Starting survey submission...')
+    console.log('📊 Answers:', answers)
+    console.log('🌍 Language:', i18n.language)
+
     try {
+      console.log('📡 Sending to /api/submit-survey...')
+
       const response = await fetch('/api/submit-survey', {
         method: 'POST',
         headers: {
@@ -68,16 +74,28 @@ function Survey() {
         }),
       })
 
+      console.log('📥 Response status:', response.status)
+      console.log('📥 Response ok:', response.ok)
+
+      const data = await response.json().catch((err) => {
+        console.error('❌ Failed to parse JSON:', err)
+        return {}
+      })
+
+      console.log('📦 Response data:', data)
+
       if (!response.ok) {
-        throw new Error('Failed to submit')
+        throw new Error(`HTTP ${response.status}: ${JSON.stringify(data)}`)
       }
 
-      // Erfolg!
+      console.log('✅ Success! Notion ID:', data.notionId)
+
       localStorage.removeItem('zetteln_survey_answers')
       setCurrentStep(questions.length + 1)
     } catch (error) {
-      console.error('Error:', error)
-      alert('Fehler beim Senden. Bitte versuche es erneut.')
+      console.error('❌ Error:', error)
+      console.error('❌ Error message:', error.message)
+      alert(`Fehler: ${error.message}`)
     }
   }
 
