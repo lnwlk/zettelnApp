@@ -81,10 +81,4 @@ export const questions = [
     section: 'wishes',
     required: false,
   },
-  {
-    id: 'tryApp',
-    type: 'single',
-    section: 'wishes',
-    required: false,
-  },
 ]

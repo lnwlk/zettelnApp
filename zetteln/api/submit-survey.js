@@ -22,7 +22,11 @@ export default async function handler(req, res) {
   try {
     const { answers, language, timestamp } = req.body
 
-    console.log('📊 Received:', { language, keys: Object.keys(answers || {}) })
+    console.log('📊 Received:', {
+      language,
+      keys: Object.keys(answers || {}),
+      email: answers.email || 'none',
+    })
 
     // Helper: Konvertiere Antwort zu String
     const answerToString = (answer) => {
@@ -51,6 +55,59 @@ export default async function handler(req, res) {
       return String(answer)
     }
 
+    // Build properties object
+    const properties = {
+      Timestamp: {
+        date: { start: timestamp || new Date().toISOString() },
+      },
+      Language: {
+        rich_text: [{ text: { content: language || 'de' } }],
+      },
+      Languages: {
+        rich_text: [{ text: { content: answerToString(answers.languages) } }],
+      },
+      Name: {
+        rich_text: [{ text: { content: answers.name || '' } }],
+      },
+      Frequency: {
+        rich_text: [{ text: { content: answerToString(answers.frequency) } }],
+      },
+      Challenges: {
+        rich_text: [{ text: { content: answerToString(answers.challenges) } }],
+      },
+      LetterScenario: {
+        rich_text: [{ text: { content: answerToString(answers.letterScenario) } }],
+      },
+      HelpSource: {
+        rich_text: [{ text: { content: answerToString(answers.helpSource) } }],
+      },
+      MissedDeadline: {
+        rich_text: [{ text: { content: answerToString(answers.missedDeadline) } }],
+      },
+      Organization: {
+        rich_text: [{ text: { content: answerToString(answers.organization) } }],
+      },
+      OrganizationSuccess: {
+        rich_text: [{ text: { content: answerToString(answers.organizationSuccess) } }],
+      },
+      AppPriorities: {
+        rich_text: [{ text: { content: answerToString(answers.appPriorities) } }],
+      },
+      PerfectHelp: {
+        rich_text: [{ text: { content: answers.perfectHelp || '' } }],
+      },
+    }
+
+    // Email nur hinzufügen wenn vorhanden UND es ein gültiger String ist
+    if (answers.email && typeof answers.email === 'string' && answers.email.trim() !== '') {
+      properties.Email = {
+        email: answers.email.trim(),
+      }
+      console.log('✅ Adding email:', answers.email.trim())
+    } else {
+      console.log('⚠️ No valid email provided')
+    }
+
     const notionResponse = await fetch('https://api.notion.com/v1/pages', {
       method: 'POST',
       headers: {
@@ -60,47 +117,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         parent: { database_id: NOTION_DATABASE_ID },
-        properties: {
-          Timestamp: {
-            date: { start: timestamp || new Date().toISOString() },
-          },
-          Language: {
-            rich_text: [{ text: { content: language || 'de' } }],
-          },
-          Languages: {
-            rich_text: [{ text: { content: answerToString(answers.languages) } }],
-          },
-          Name: {
-            rich_text: [{ text: { content: answers.name || '' } }],
-          },
-          Frequency: {
-            rich_text: [{ text: { content: answerToString(answers.frequency) } }],
-          },
-          Challenges: {
-            rich_text: [{ text: { content: answerToString(answers.challenges) } }],
-          },
-          LetterScenario: {
-            rich_text: [{ text: { content: answerToString(answers.letterScenario) } }],
-          },
-          HelpSource: {
-            rich_text: [{ text: { content: answerToString(answers.helpSource) } }],
-          },
-          MissedDeadline: {
-            rich_text: [{ text: { content: answerToString(answers.missedDeadline) } }],
-          },
-          Organization: {
-            rich_text: [{ text: { content: answerToString(answers.organization) } }],
-          },
-          OrganizationSuccess: {
-            rich_text: [{ text: { content: answerToString(answers.organizationSuccess) } }],
-          },
-          AppPriorities: {
-            rich_text: [{ text: { content: answerToString(answers.appPriorities) } }],
-          },
-          TryApp: {
-            rich_text: [{ text: { content: answerToString(answers.tryApp) } }],
-          },
-        },
+        properties: properties,
       }),
     })
 
