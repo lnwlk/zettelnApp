@@ -1,0 +1,156 @@
+{
+  "survey": {
+    "title": "Raconte ton expérience avec les lettres administratives",
+    "duration": "Durée : environ 5 minutes",
+    "anonymous": "Anonyme & confidentiel",
+    "navigation": {
+      "next": "Continue",
+      "back": "Retour",
+      "submit": "Envoyer",
+      "skip": "Sauter"
+    },
+    "progress": "Question {{current}} posée par {{total}}",
+    "consent": {
+      "title": "Consentement",
+      "text": "J'accepte que mes réponses ne soient utilisées que pour ce projet. Une fois le projet terminé, elles seront supprimées. Je n'ai pas besoin d'indiquer mon nom ou mon adresse e-mail si je ne le souhaite pas. Es-tu d'accord ?",
+      "yes": "Oui, je suis d'accord",
+      "no": "Non"
+    },
+    "sections": {
+      "about": "A propos de toi",
+      "challenges": "Tes défis",
+      "digital": "Habitudes numériques",
+      "wishes": "Tes souhaits"
+    },
+    "questions": {
+      "languages": {
+        "question": "Quelles langues parles-tu ?",
+        "hint": "Choix multiple possible",
+        "options": {
+          "german": "Allemand",
+          "english": "Anglais",
+          "arabic": "Arabe",
+          "turkish": "Turc",
+          "russian": "Russe",
+          "ukrainian": "Ukrainien",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quelle langue ?"
+      },
+      "name": {
+        "question": "Quel est ton prénom ?",
+        "placeholder": "Ton nom"
+      },
+      "frequency": {
+        "question": "Combien de fois as-tu eu affaire aux autorités, par exemple au Jobcenter, au service des étrangers ou au service de la jeunesse ?",
+        "options": {
+          "multiple": "Presque chaque semaine",
+          "monthly": "Une fois par mois",
+          "few": "Quelques fois par an",
+          "rarely": "Rarement"
+        }
+      },
+      "challenges": {
+        "question": "Qu'est-ce que tu trouves le plus difficile quand tu parles à une autorité ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "language": "La langue est trop compliquée",
+          "documents": "Je ne sais pas de quels documents j'ai besoin",
+          "deadlines": "Je ne comprends pas les délais",
+          "forms": "Remplir des formulaires est difficile",
+          "organization": "Je ne trouve pas mes documents",
+          "help": "Je ne sais pas où trouver de l'aide",
+          "appointments": "Les rendez-vous sont difficiles à obtenir",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
+      },
+      "letterScenario": {
+        "question": "Imagine un peu : Tu reçois une lettre du Jobcenter. Qu'est-ce que tu fais en premier ?",
+        "options": {
+          "understand": "Je le lis moi-même et le comprends la plupart du temps",
+          "askHelp": "Je le lis, mais je dois demander à quelqu'un",
+          "translate": "J'utilise Google Translate ou des applications similaires",
+          "giveAwayDirect": "Je prends une photo et je l'envoie par WhatsApp à une personne",
+          "giveAwayOnline": "J'attends de rencontrer une personne qui puisse m'aider",
+          "giveAwayOrganisation": "Je vais voir un centre de conseil ou une assistante sociale:in",
+          "postpone": "Je le mets de côté pour le moment"
+        }
+      },
+      "helpSource": {
+        "question": "Qui t'aide habituellement dans tes démarches administratives ?",
+        "hint": "Choix multiple possible",
+        "options": {
+          "family": "Famille ou amis",
+          "counseling": "Centres de conseil (Caritas, Diakonie, etc.)",
+          "socialWorker": "Assistant(e) social(e) ou assistant(e) familial(e)",
+          "alone": "Personne, je fais tout tout seul",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Qui ?"
+      },
+      "missedDeadline": {
+        "question": "As-tu déjà manqué quelque chose d'important (délai, rendez-vous) parce que tu n'as pas compris une lettre ?",
+        "options": {
+          "multiple": "Oui, plusieurs fois",
+          "once": "Oui, une fois",
+          "never": "Non, jamais",
+          "unsure": "Je ne suis pas sûr"
+        }
+      },
+      "organization": {
+        "question": "Comment organises-tu tes documents importants ?",
+        "hint": "Choix multiple possible",
+        "options": {
+          "folder": "J'ai un dossier à la maison",
+          "bag": "Je garde tout dans un sac/tiroir",
+          "photos": "Je prends des photos avec mon téléphone",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Comment ?"
+      },
+      "organizationSuccess": {
+        "question": "Comment se passe l'organisation de tes documents ?",
+        "options": {
+          "good": "Super ! Je trouve toujours tout",
+          "sometimes": "Je dois chercher longtemps, mais je trouve souvent",
+          "help": "Sans aide, je ne trouve pas les documents",
+          "lose": "Souvent, les papiers se perdent"
+        }
+      },
+      "appPriorities": {
+        "question": "Imagine un peu : Une application t'aide à écrire des lettres. Qu'est-ce qui est le plus important pour toi ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "privacy": "Mes données restent privées et ne seront pas partagées.",
+          "free": "L'application est gratuite",
+          "simpleLanguage": "Un langage simple que je comprends",
+          "multilingual": "Je peux utiliser l'application dans ma langue",
+          "guidance": "L'application m'explique ce que je dois faire",
+          "organization": "Je peux y trier mes documents",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi ?"
+      },
+      "perfectHelp": {
+        "question": "Tu as d'autres idées sur la façon dont une application pourrait t'aider dans tes démarches administratives ?",
+        "placeholder": "Ecris ici tes idées..."
+      },
+      "email": {
+        "question": "Partage ton e-mail avec nous pour que nous puissions te tenir au courant du projet.",
+        "placeholder": "deine@email.de"
+      }
+    },
+    "thanks": {
+      "title": "Merci beaucoup ! 🙏",
+      "message": "Tes réponses nous aideront à développer une application qui sera vraiment utile.",
+      "next": "Nous utiliserons les résultats pour rendre zetteln encore meilleur.",
+      "home": "Vers la page d'accueil"
+    },
+    "errors": {
+      "required": "Choisis une réponse",
+      "maxSelections": "Tu peux avoir un maximum de {{max}}. choisir des réponses",
+      "generic": "Une erreur s'est produite. Merci de réessayer."
+    }
+  }
+}

@@ -9,7 +9,7 @@ export const questions = [
   },
   {
     id: 'name',
-    type: 'text',
+    type: 'shortText',
     section: 'about',
     required: false,
   },
@@ -73,12 +73,7 @@ export const questions = [
     section: 'wishes',
     required: false,
   },
-  {
-    id: 'tryApp',
-    type: 'single',
-    section: 'wishes',
-    required: false,
-  },
+
   {
     id: 'email',
     type: 'email',

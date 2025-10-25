@@ -101,7 +101,7 @@ function Survey() {
 
   if (currentStep === 0) {
     return (
-      <div className="min-h-screen bg-slate-50 px-4 py-8">
+      <div className="min-h-screen px-4 py-8">
         <div className="mx-auto max-w-2xl">
           <LanguageSwitcher />
           <ConsentScreen onConsent={handleConsent} />
@@ -125,13 +125,12 @@ function Survey() {
   const isLastQuestion = currentStep === questions.length
 
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-8">
+    <div className="min-h-screen px-4 py-8">
       <div className="mx-auto max-w-2xl">
         <LanguageSwitcher />
 
         <div className="mb-8 text-center">
-          <h1 className="mb-3 text-3xl font-bold text-slate-900 md:text-4xl">{t('survey.title')}</h1>
-          <p className="text-lg text-slate-600">{t('survey.subtitle')}</p>
+          <h1 className="mb-3 text-3xl md:text-4xl">{t('survey.title')}</h1>
         </div>
 
         <ProgressBar current={currentStep} total={questions.length} />

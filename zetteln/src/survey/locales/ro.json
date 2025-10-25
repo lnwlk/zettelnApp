@@ -1,0 +1,156 @@
+{
+  "survey": {
+    "title": "Spuneți-ne despre experiența dumneavoastră cu scrisorile de la autorități",
+    "duration": "Durata: aprox. 5 minute",
+    "anonymous": "Anonim și confidențial",
+    "navigation": {
+      "next": "În continuare",
+      "back": "Înapoi",
+      "submit": "Trimitere",
+      "skip": "Salt"
+    },
+    "progress": "Întrebare {{current}} de la {{total}}",
+    "consent": {
+      "title": "Consimțământ",
+      "text": "Sunt de acord că răspunsurile mele vor fi utilizate numai pentru acest proiect. Acestea vor fi șterse după proiect. Nu trebuie să îmi dau numele sau adresa de e-mail dacă nu doresc. Sunteți de acord?",
+      "yes": "Da, sunt de acord",
+      "no": "Nu"
+    },
+    "sections": {
+      "about": "Despre tine",
+      "challenges": "Provocările dumneavoastră",
+      "digital": "Obiceiuri digitale",
+      "wishes": "Dorințele dumneavoastră"
+    },
+    "questions": {
+      "languages": {
+        "question": "Ce limbi vorbiți?",
+        "hint": "Selecție multiplă posibilă",
+        "options": {
+          "german": "germană",
+          "english": "Engleză",
+          "arabic": "arabă",
+          "turkish": "Turcă",
+          "russian": "Rusă",
+          "ukrainian": "Ucraineană",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Care limbă?"
+      },
+      "name": {
+        "question": "Care este prenumele dumneavoastră?",
+        "placeholder": "Numele dvs."
+      },
+      "frequency": {
+        "question": "Cât de des aveți de-a face cu autoritățile, cum ar fi centrul pentru ocuparea forței de muncă, biroul de imigrare sau biroul de asistență socială pentru tineri?",
+        "options": {
+          "multiple": "Aproape în fiecare săptămână",
+          "monthly": "O dată pe lună",
+          "few": "De câteva ori pe an",
+          "rarely": "Rare"
+        }
+      },
+      "challenges": {
+        "question": "Ce vi se pare cel mai dificil atunci când vorbiți cu o autoritate?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "language": "Limba este prea complicată",
+          "documents": "Nu știu de ce documente am nevoie",
+          "deadlines": "Nu înțeleg termenele limită",
+          "forms": "Completarea formularelor este dificilă",
+          "organization": "Nu-mi pot găsi documentele",
+          "help": "Nu știu unde să obțin ajutor",
+          "appointments": "Programările sunt greu de obținut",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
+      },
+      "letterScenario": {
+        "question": "Imaginați-vă acest lucru: Primiți o scrisoare de la agenția pentru ocuparea forței de muncă. Ce faceți mai întâi?",
+        "options": {
+          "understand": "O citesc și eu și o înțeleg de cele mai multe ori",
+          "askHelp": "Am citit-o, dar trebuie să întreb pe cineva",
+          "translate": "Eu folosesc Google Translate sau aplicații similare",
+          "giveAwayDirect": "Fac o fotografie și o trimit unei persoane prin WhatsApp",
+          "giveAwayOnline": "Aștept până întâlnesc o persoană care mă poate ajuta",
+          "giveAwayOrganisation": "Merg la un centru de consiliere sau la un asistent social",
+          "postpone": "Am pus-o deoparte pentru moment"
+        }
+      },
+      "helpSource": {
+        "question": "Cine vă ajută în mod normal cu problemele oficiale?",
+        "hint": "Selecție multiplă posibilă",
+        "options": {
+          "family": "Familie sau prieteni",
+          "counseling": "Centre de consiliere (Caritas, Diakonie, etc.)",
+          "socialWorker": "Asistent social sau asistent familial",
+          "alone": "Nimeni, fac totul singur",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Cine?"
+      },
+      "missedDeadline": {
+        "question": "Ați ratat vreodată ceva important (termen limită, întâlnire) pentru că nu ați înțeles o scrisoare?",
+        "options": {
+          "multiple": "Da, de mai multe ori",
+          "once": "Da, o dată",
+          "never": "Nu, niciodată înainte",
+          "unsure": "Nu sunt sigur"
+        }
+      },
+      "organization": {
+        "question": "Cum vă organizați documentele importante?",
+        "hint": "Selecție multiplă posibilă",
+        "options": {
+          "folder": "Am un dosar acasă",
+          "bag": "Păstrez totul într-o geantă/un sertar",
+          "photos": "Fac fotografii cu telefonul meu mobil",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Cum?"
+      },
+      "organizationSuccess": {
+        "question": "Cât de bine vă organizați documentele?",
+        "options": {
+          "good": "Super! Întotdeauna găsesc totul",
+          "sometimes": "Trebuie să caut mult timp, dar de obicei îl găsesc",
+          "help": "Nu pot găsi documente fără ajutor",
+          "lose": "Documentele se pierd adesea"
+        }
+      },
+      "appPriorities": {
+        "question": "Imaginați-vă acest lucru: O aplicație te ajută cu literele. Ce este cel mai important pentru tine?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "privacy": "Datele mele rămân private și nu vor fi transmise mai departe",
+          "free": "Aplicația este gratuită",
+          "simpleLanguage": "Limbaj simplu pe care îl înțeleg",
+          "multilingual": "Pot utiliza aplicația în limba mea",
+          "guidance": "Aplicația îmi spune ce trebuie să fac",
+          "organization": "Îmi pot sorta documentele acolo",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce?"
+      },
+      "perfectHelp": {
+        "question": "Aveți idei cu privire la modul în care o aplicație v-ar putea ajuta în chestiuni oficiale?",
+        "placeholder": "Scrie-ți ideile aici..."
+      },
+      "email": {
+        "question": "Trimiteți-ne adresa dvs. de e-mail pentru a vă putea ține la curent cu privire la proiect",
+        "placeholder": "deine@email.de"
+      }
+    },
+    "thanks": {
+      "title": "Vă mulțumim foarte mult! 🙏",
+      "message": "Răspunsurile dvs. ne vor ajuta să dezvoltăm o aplicație cu adevărat utilă.",
+      "next": "Vom folosi rezultatele pentru a face zetteln și mai bun.",
+      "home": "La pagina de pornire"
+    },
+    "errors": {
+      "required": "Vă rugăm să alegeți un răspuns",
+      "maxSelections": "Puteți alege un număr maxim de {{max}} Selectați răspunsuri",
+      "generic": "A apărut o eroare. Vă rugăm să încercați din nou."
+    }
+  }
+}

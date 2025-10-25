@@ -1,7 +1,7 @@
 {
   "survey": {
-    "title": "Deine Erfahrungen mit Behörden",
-    "subtitle": "Hilf uns, eine bessere App zu entwickeln",
+    "title": "Erzähle von deine Erfahrungen mit Behördenbriefe",
+
     "duration": "Dauer: ca. 5 Minuten",
     "anonymous": "Anonym & vertraulich",
 
@@ -16,7 +16,7 @@
 
     "consent": {
       "title": "Einwilligung",
-      "text": "Ich bin einverstanden, dass meine Antworten anonym für die Entwicklung der zetteln-App genutzt werden.\n\nMeine Daten werden:\n- Anonym gespeichert (keine Namen, keine E-Mails)\n- Nur für dieses Projekt verwendet\n- Nach dem Projekt gelöscht\n\nBist du einverstanden?",
+      "text": "Ich bin einverstanden, dass meine Antworten nur für dieses Projekt verwendet werden. Nach dem Projekt werden sie gelöscht. Ich brauche keinen Namen oder E-Mail angeben, wenn ich das nicht möchte. Bist du einverstanden?",
       "yes": "Ja, ich stimme zu",
       "no": "Nein"
     },
@@ -153,21 +153,9 @@
         "placeholder": "Schreib hier deine Ideen..."
       },
 
-      "tryApp": {
-        "question": "Möchtest du die App testen, wenn sie fertig ist?",
-        "options": {
-          "yes": "Ja, auf jeden Fall",
-          "maybe": "Ja, vielleicht",
-          "no": "Nein",
-          "dontKnow": "Ich weiß nicht"
-        }
-      },
-
       "email": {
-        "question": "Möchtest du über das Projekt informiert bleiben?",
-        "yes": "Ja, gerne!",
-        "no": "Nein, danke",
-        "placeholder": "Deine E-Mail-Adresse"
+        "question": "Teile deine E-Mail mit uns, damit wir dich über das Projekt informieren können",
+        "placeholder": "deine@email.de"
       }
     },
 

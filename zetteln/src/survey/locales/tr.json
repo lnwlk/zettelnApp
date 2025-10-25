@@ -1,0 +1,156 @@
+{
+  "survey": {
+    "title": "Yetkililerden gelen mektuplarla ilgili deneyimlerinizi bize anlatın",
+    "duration": "Süre: yaklaşık 5 dakika",
+    "anonymous": "Anonim ve gizli",
+    "navigation": {
+      "next": "Daha ileri",
+      "back": "Geri",
+      "submit": "Gönderme",
+      "skip": "Atla"
+    },
+    "progress": "Question {{current}} from {{total}}",
+    "consent": {
+      "title": "Rıza",
+      "text": "Cevaplarımın sadece bu proje için kullanılacağını kabul ediyorum. Proje sonrasında silineceklerdir. İstemiyorsam adımı veya e-posta adresimi vermek zorunda değilim. Kabul ediyor musunuz?",
+      "yes": "Evet, katılıyorum.",
+      "no": "Hayır"
+    },
+    "sections": {
+      "about": "Senin hakkında",
+      "challenges": "Karşılaştığınız zorluklar",
+      "digital": "Dijital alışkanlıklar",
+      "wishes": "Dileklerin"
+    },
+    "questions": {
+      "languages": {
+        "question": "Hangi dilleri konuşuyorsunuz?",
+        "hint": "Çoklu seçim mümkün",
+        "options": {
+          "german": "Alman",
+          "english": "İngilizce",
+          "arabic": "Arapça",
+          "turkish": "Türkçe",
+          "russian": "Rusça",
+          "ukrainian": "Ukrayna",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Hangi dil?"
+      },
+      "name": {
+        "question": "İlk adın ne?",
+        "placeholder": "Sizin adınız"
+      },
+      "frequency": {
+        "question": "İş bulma merkezi, göçmenlik bürosu veya gençlik dairesi gibi makamlarla ne sıklıkla muhatap olmak zorunda kalıyorsunuz?",
+        "options": {
+          "multiple": "Neredeyse her hafta",
+          "monthly": "Ayda bir kez",
+          "few": "Yılda birkaç kez",
+          "rarely": "Nadir"
+        }
+      },
+      "challenges": {
+        "question": "Bir yetkili ile konuşurken en çok neyi zor buluyorsunuz?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "language": "Dil çok karmaşık",
+          "documents": "Hangi belgelere ihtiyacım olduğunu bilmiyorum",
+          "deadlines": "Son teslim tarihlerini anlamıyorum.",
+          "forms": "Formları doldurmak zor",
+          "organization": "Belgelerimi bulamıyorum",
+          "help": "Nereden yardım alacağımı bilmiyorum.",
+          "appointments": "Randevu almak çok zor",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
+      },
+      "letterScenario": {
+        "question": "Şunu hayal edin: İş bulma kurumundan bir mektup aldınız. İlk olarak ne yaparsınız?",
+        "options": {
+          "understand": "Ben de okudum ve çoğu zaman anladım",
+          "askHelp": "Okudum ama birine sormam gerek.",
+          "translate": "Google Translate veya benzeri uygulamaları kullanıyorum",
+          "giveAwayDirect": "Bir fotoğraf çekiyorum ve WhatsApp aracılığıyla bir kişiye gönderiyorum",
+          "giveAwayOnline": "Bana yardım edebilecek biriyle tanışana kadar beklerim.",
+          "giveAwayOrganisation": "Bir danışma merkezine veya sosyal hizmet uzmanına giderim",
+          "postpone": "Şimdilik bir kenara koydum."
+        }
+      },
+      "helpSource": {
+        "question": "Normalde resmi konularda size kim yardımcı oluyor?",
+        "hint": "Çoklu seçim mümkün",
+        "options": {
+          "family": "Aile veya arkadaşlar",
+          "counseling": "Danışma merkezleri (Caritas, Diakonie, vb.)",
+          "socialWorker": "Sosyal hizmet uzmanı veya aile yardımcısı",
+          "alone": "Hiç kimse, her şeyi yalnız yaparım.",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Kimi?"
+      },
+      "missedDeadline": {
+        "question": "Bir mektubu anlamadığınız için önemli bir şeyi (son teslim tarihi, randevu) kaçırdığınız oldu mu hiç?",
+        "options": {
+          "multiple": "Evet, birkaç kez",
+          "once": "Evet, bir kez",
+          "never": "Hayır, daha önce hiç",
+          "unsure": "Emin değilim."
+        }
+      },
+      "organization": {
+        "question": "Önemli belgelerinizi nasıl düzenliyorsunuz?",
+        "hint": "Çoklu seçim mümkün",
+        "options": {
+          "folder": "Evde bir klasörüm var.",
+          "bag": "Her şeyi bir çantada/çekmecede tutuyorum",
+          "photos": "Cep telefonumla fotoğraf çekiyorum",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Nasıl?"
+      },
+      "organizationSuccess": {
+        "question": "Belgelerinizi ne kadar iyi düzenliyorsunuz?",
+        "options": {
+          "good": "Süper! Her zaman her şeyi bulurum",
+          "sometimes": "Uzun süre aramam gerekiyor, ama genellikle buluyorum",
+          "help": "Yardım almadan belgeleri bulamıyorum",
+          "lose": "Evraklar sık sık kaybolur"
+        }
+      },
+      "appPriorities": {
+        "question": "Bunu hayal edin: Bir uygulama size harfler konusunda yardımcı oluyor. Sizin için en önemli olan nedir?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "privacy": "Verilerim gizli kalacak ve başkalarına aktarılmayacak",
+          "free": "Uygulama ücretsizdir",
+          "simpleLanguage": "Anladığım basit bir dil",
+          "multilingual": "Uygulamayı kendi dilimde kullanabilirim",
+          "guidance": "Uygulama bana ne yapmam gerektiğini söylüyor",
+          "organization": "Belgelerimi orada sıralayabilirim",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Ne?"
+      },
+      "perfectHelp": {
+        "question": "Bir uygulamanın resmi konularda size nasıl yardımcı olabileceğine dair fikirleriniz var mı?",
+        "placeholder": "Fikirlerinizi buraya yazın..."
+      },
+      "email": {
+        "question": "Proje hakkında sizi bilgilendirebilmemiz için e-posta adresinizi bizimle paylaşın",
+        "placeholder": "deine@email.de"
+      }
+    },
+    "thanks": {
+      "title": "Çok teşekkür ederim! 🙏",
+      "message": "Cevaplarınız gerçekten faydalı bir uygulama geliştirmemize yardımcı olacaktır.",
+      "next": "Sonuçları zetteln'i daha da iyi hale getirmek için kullanacağız.",
+      "home": "Ana sayfaya"
+    },
+    "errors": {
+      "required": "Lütfen bir cevap seçin",
+      "maxSelections": "En fazla {{max}} seçebilirsiniz Cevapları seçin",
+      "generic": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  }
+}

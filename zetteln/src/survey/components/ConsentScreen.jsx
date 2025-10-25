@@ -1,55 +1,47 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 function ConsentScreen({ onConsent }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+    <div className="rounded-2xl p-6 md:p-8">
       {/* Intro */}
-      <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
-          {t('survey.title')}
-        </h1>
-        <p className="text-lg text-slate-600 mb-4">
-          {t('survey.subtitle')}
-        </p>
-        <div className="flex flex-wrap gap-2 justify-center">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+      <div className="mb-8 text-center">
+        <h1 className="mb-3 text-3xl leading-tight md:text-5xl"> {t('survey.title')}</h1>
+
+        <div className="flex flex-wrap justify-center gap-2">
+          <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
             {t('survey.duration')}
           </span>
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+          <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm text-green-800">
             {t('survey.anonymous')}
           </span>
         </div>
       </div>
 
       {/* Consent Box */}
-      <div className="border-2 border-slate-200 rounded-xl p-6 bg-slate-50">
-        <h2 className="text-xl font-semibold text-slate-900 mb-3">
-          {t('survey.consent.title')}
-        </h2>
-        <p className="text-slate-700 leading-relaxed mb-6">
-          {t('survey.consent.text')}
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-3">
-          <button 
-            className="flex-1 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md"
+      <div className="rounded-xl bg-white p-6 text-center">
+        <h2 className="mb-3 text-xl text-slate-900">{t('survey.consent.title')}</h2>
+        <p className="mb-6 leading-relaxed text-slate-700">{t('survey.consent.text')}</p>
+
+        <div className="flex flex-col gap-3">
+          <button
+            className="bg-black-800 flex-1 rounded-lg px-6 py-3 text-white shadow-sm transition-colors duration-200 hover:bg-black hover:shadow-md"
             onClick={() => onConsent(true)}
           >
             {t('survey.consent.yes')}
           </button>
-          <button 
-            className="flex-1 px-6 py-3 bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold rounded-lg transition-colors duration-200"
-            onClick={() => window.location.href = '/'}
+          <button
+            className="hover:bg-sand-50 flex-1 rounded-lg border-1 border-gray-200 bg-white px-6 py-3 text-gray-700 transition-colors duration-200"
+            onClick={() => (window.location.href = '/')}
           >
             {t('survey.consent.no')}
           </button>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ConsentScreen;
+export default ConsentScreen

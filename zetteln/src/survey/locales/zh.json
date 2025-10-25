@@ -1,0 +1,156 @@
+{
+  "survey": {
+    "title": "告诉我们您收到当局信件的经历",
+    "duration": "时长：约 5 分钟",
+    "anonymous": "匿名和保密",
+    "navigation": {
+      "next": "更多",
+      "back": "返回",
+      "submit": "发送",
+      "skip": "跳过"
+    },
+    "progress": "来自{{总}}的{{当前}}问题",
+    "consent": {
+      "title": "同意书",
+      "text": "我同意我的答案仅用于本项目。项目结束后，答案将被删除。如果我不愿意，我不需要提供姓名或电子邮件地址。您同意吗？",
+      "yes": "是的，我同意",
+      "no": "没有"
+    },
+    "sections": {
+      "about": "关于您",
+      "challenges": "您面临的挑战",
+      "digital": "数字习惯",
+      "wishes": "您的愿望"
+    },
+    "questions": {
+      "languages": {
+        "question": "您会说什么语言？",
+        "hint": "可进行多重选择",
+        "options": {
+          "german": "德国",
+          "english": "英语",
+          "arabic": "阿拉伯语",
+          "turkish": "土耳其语",
+          "russian": "俄罗斯",
+          "ukrainian": "乌克兰",
+          "other": "其他"
+        },
+        "otherPlaceholder": "哪种语言？"
+      },
+      "name": {
+        "question": "你叫什么名字？",
+        "placeholder": "您的姓名"
+      },
+      "frequency": {
+        "question": "您多久需要与就业中心、移民局或青年福利局等机构打一次交道？",
+        "options": {
+          "multiple": "几乎每周",
+          "monthly": "每月一次",
+          "few": "每年几次",
+          "rarely": "罕见"
+        }
+      },
+      "challenges": {
+        "question": "与权威人士交谈时，您觉得最困难的是什么？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "language": "语言太复杂",
+          "documents": "我不知道我需要哪些文件",
+          "deadlines": "我不明白最后期限",
+          "forms": "填写表格很困难",
+          "organization": "我找不到我的文件",
+          "help": "我不知道去哪里寻求帮助",
+          "appointments": "预约难",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
+      },
+      "letterScenario": {
+        "question": "想象一下：您收到了就业中心的来信。你首先会做什么？",
+        "options": {
+          "understand": "我自己读过，大部分时候都能理解",
+          "askHelp": "我读了，但我要问一个人",
+          "translate": "我使用谷歌翻译或类似的应用程序",
+          "giveAwayDirect": "我拍了一张照片并通过 WhatsApp 发送给对方",
+          "giveAwayOnline": "我一直在等待，直到遇到一个能帮助我的人",
+          "giveAwayOrganisation": "我向咨询中心或社会工作者求助",
+          "postpone": "我暂时把它放在一边"
+        }
+      },
+      "helpSource": {
+        "question": "通常谁会帮助您处理公务？",
+        "hint": "可进行多重选择",
+        "options": {
+          "family": "家人或朋友",
+          "counseling": "咨询中心（明爱机构、Diakonie 等）",
+          "socialWorker": "社会工作者或家庭帮手",
+          "alone": "没有人，我什么都自己做",
+          "other": "其他"
+        },
+        "otherPlaceholder": "谁？"
+      },
+      "missedDeadline": {
+        "question": "您是否曾因为不理解一封信而错过重要的事情（截止日期、约会）？",
+        "options": {
+          "multiple": "是的，好几次",
+          "once": "是的，曾经",
+          "never": "不，从来没有",
+          "unsure": "我不确定"
+        }
+      },
+      "organization": {
+        "question": "如何整理您的重要文件？",
+        "hint": "可进行多重选择",
+        "options": {
+          "folder": "我家里有一个文件夹",
+          "bag": "我把所有东西都放在一个包/抽屉里",
+          "photos": "我用手机拍照",
+          "other": "其他"
+        },
+        "otherPlaceholder": "怎么做？"
+      },
+      "organizationSuccess": {
+        "question": "您的文件整理得如何？",
+        "options": {
+          "good": "超级棒我总能找到一切",
+          "sometimes": "我得找很久，但通常都能找到",
+          "help": "没有帮助，我找不到文件",
+          "lose": "文件经常丢失"
+        }
+      },
+      "appPriorities": {
+        "question": "想象一下：一款应用程序可以帮助您处理信件。什么对你最重要？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "privacy": "我的数据将保持私密，不会外传",
+          "free": "该应用程序免费",
+          "simpleLanguage": "简单易懂的语言",
+          "multilingual": "我可以用自己的语言使用该应用程序",
+          "guidance": "应用程序告诉我需要做什么",
+          "organization": "我可以在那里整理我的文件",
+          "other": "其他"
+        },
+        "otherPlaceholder": "什么？"
+      },
+      "perfectHelp": {
+        "question": "您对应用程序如何帮助您处理公务有什么想法吗？",
+        "placeholder": "在这里写下您的想法..."
+      },
+      "email": {
+        "question": "与我们分享您的电子邮件，以便我们随时向您通报项目情况",
+        "placeholder": "deine@email.de"
+      }
+    },
+    "thanks": {
+      "title": "非常感谢！🙏",
+      "message": "您的回答将有助于我们开发一款真正有用的应用程序。",
+      "next": "我们将利用这些结果使zetteln变得更好。",
+      "home": "返回主页"
+    },
+    "errors": {
+      "required": "请选择一个答案",
+      "maxSelections": "您最多可以选择 {{max}}选择答案",
+      "generic": "发生错误。请重试。"
+    }
+  }
+}
