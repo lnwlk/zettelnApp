@@ -13,6 +13,7 @@ export const questions = [
     section: 'about',
     required: false,
   },
+
   {
     id: 'frequency',
     type: 'single',
@@ -77,6 +78,12 @@ export const questions = [
   {
     id: 'email',
     type: 'email',
+    section: 'wishes',
+    required: false,
+  },
+  {
+    id: 'tryApp',
+    type: 'single',
     section: 'wishes',
     required: false,
   },
