@@ -101,8 +101,8 @@ function Survey() {
 
   if (currentStep === 0) {
     return (
-      <div className="Zpx-4 min-h-screen py-8">
-        <div className="mx-auto max-w-2xl">
+      <div className="min-h-screen w-full px-4 py-8">
+        <div className="mx-auto w-full md:max-w-2xl">
           <LanguageSwitcher />
           <ConsentScreen onConsent={handleConsent} />
         </div>
@@ -125,8 +125,8 @@ function Survey() {
   const isLastQuestion = currentStep === questions.length
 
   return (
-    <div className="min-h-screen px-4 py-8">
-      <div className="mx-auto max-w-2xl">
+    <div className="min-h-screen px-4 py-4 md:py-8">
+      <div className="mx-auto md:max-w-2xl">
         <div className="mb-8 text-center">
           <h1 className="mb-3 text-3xl md:text-4xl">{t('survey.title')}</h1>
         </div>

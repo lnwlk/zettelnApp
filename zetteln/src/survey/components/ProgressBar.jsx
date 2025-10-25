@@ -62,7 +62,7 @@ export function ThankYouScreen() {
   const { t } = useTranslation()
 
   return (
-    <div className="rounded-2xl bg-white p-8 text-center shadow-lg md:p-12">
+    <div className="rounded-2xl bg-white p-4 text-center shadow-lg md:p-12">
       <div className="mx-auto max-w-md">
         {/* Success Icon */}
         <div className="mb-6">

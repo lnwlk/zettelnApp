@@ -5,7 +5,7 @@ function ConsentScreen({ onConsent }) {
   const { t } = useTranslation()
 
   return (
-    <div className="rounded-2xl p-6 md:p-8">
+    <div className="rounded-2xl md:p-8">
       {/* Intro */}
       <div className="mb-8 text-center">
         <h1 className="mb-3 text-3xl leading-tight md:text-5xl"> {t('survey.title')}</h1>
@@ -21,7 +21,7 @@ function ConsentScreen({ onConsent }) {
       </div>
 
       {/* Consent Box */}
-      <div className="rounded-xl bg-white p-6 text-center">
+      <div className="rounded-xl bg-white p-4 text-center">
         <h2 className="mb-3 text-xl text-slate-900">{t('survey.consent.title')}</h2>
         <p className="mb-6 leading-relaxed text-slate-700">{t('survey.consent.text')}</p>
 

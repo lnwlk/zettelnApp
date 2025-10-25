@@ -70,7 +70,7 @@ function QuestionScreen({ question, answer, onAnswer, onNext, onBack, onSubmit, 
   }
 
   return (
-    <div className="rounded-2xl p-6 md:p-8">
+    <div className="rounded-2xl md:p-8">
       {/* Question Content */}
       <div className="mb-8">
         <h2 className="mb-4 text-2xl leading-tight font-semibold text-slate-900 md:text-3xl">
@@ -100,32 +100,21 @@ function QuestionScreen({ question, answer, onAnswer, onNext, onBack, onSubmit, 
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-row gap-3 md:justify-end">
         <button
-          className="rounded-lg bg-gray-200 px-6 py-3 text-gray-700 transition-colors duration-200 hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50"
+          className="min-w-40 rounded-lg bg-gray-200 px-6 py-3 text-gray-700 transition-colors duration-200 hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50"
           onClick={onBack}
           disabled={isFirst}
         >
           {t('survey.navigation.back')}
         </button>
 
-        <div className="flex gap-3 sm:ml-auto">
-          {!question.required && !isLast && (
-            <button
-              className="px-6 py-3 text-gray-600 transition-colors duration-200 hover:text-gray-900"
-              onClick={onNext}
-            >
-              {t('survey.navigation.skip')}
-            </button>
-          )}
-
-          <button
-            className="rounded-lg bg-blue-300 px-6 py-3 font-semibold transition-colors duration-200 hover:bg-blue-400"
-            onClick={handleNext}
-          >
-            {isLast ? t('survey.navigation.submit') : t('survey.navigation.next')}
-          </button>
-        </div>
+        <button
+          className="w-full rounded-lg bg-blue-300 px-6 py-3 font-semibold transition-colors duration-200 hover:bg-blue-400 md:w-auto md:min-w-40"
+          onClick={handleNext}
+        >
+          {isLast ? t('survey.navigation.submit') : t('survey.navigation.next')}
+        </button>
       </div>
     </div>
   )
