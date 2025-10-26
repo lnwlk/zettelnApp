@@ -1,3 +1,5 @@
+import { addSubscriber, sendTransactionalEmail } from './services/listmonk.js'
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Credentials', 'true')
   res.setHeader('Access-Control-Allow-Origin', '*')
@@ -134,6 +136,52 @@ export default async function handler(req, res) {
 
     const data = JSON.parse(responseText)
     console.log('✅ Success! ID:', data.id)
+
+    // Add subscriber to Listmonk if email was provided
+    if (answers.email && typeof answers.email === 'string' && answers.email.trim() !== '') {
+      try {
+        const userEmail = answers.email.trim()
+        const userName = answers.name || userEmail.split('@')[0]
+
+        // Get Listmonk configuration from environment
+        const listmonkListId = process.env.LISTMONK_LIST_ID
+        const listmonkTemplateId = process.env.LISTMONK_TEMPLATE_ID
+
+        if (!listmonkListId) {
+          console.log('⚠️ LISTMONK_LIST_ID not configured, skipping email notification')
+        } else {
+          // Prepare subscriber attributes from survey data
+          const attributes = {
+            language: language || 'de',
+            survey_completed_at: timestamp || new Date().toISOString(),
+            name: userName,
+            languages: answerToString(answers.languages),
+            frequency: answerToString(answers.frequency)
+          }
+
+          // Add subscriber to Listmonk
+          await addSubscriber(
+            userEmail,
+            userName,
+            [parseInt(listmonkListId)],
+            attributes
+          )
+
+          // Optionally send a transactional welcome/confirmation email
+          if (listmonkTemplateId) {
+            await sendTransactionalEmail(userEmail, parseInt(listmonkTemplateId), {
+              Name: userName,
+              Language: language || 'de'
+            })
+            console.log('📧 Sent confirmation email to:', userEmail)
+          }
+        }
+      } catch (listmonkError) {
+        // Don't fail the entire request if Listmonk fails
+        // Survey was already saved to Notion successfully
+        console.error('⚠️ Listmonk error (non-critical):', listmonkError.message)
+      }
+    }
 
     return res.status(200).json({ success: true, notionId: data.id })
   } catch (error) {
