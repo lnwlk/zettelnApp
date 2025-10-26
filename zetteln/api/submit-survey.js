@@ -72,11 +72,23 @@ export default async function handler(req, res) {
       Frequency: {
         rich_text: [{ text: { content: answerToString(answers.frequency) } }],
       },
-      Challenges: {
-        rich_text: [{ text: { content: answerToString(answers.challenges) } }],
+      ScenarioLetter: {
+        rich_text: [{ text: { content: answerToString(answers.scenarioLetter) } }],
       },
-      LetterScenario: {
-        rich_text: [{ text: { content: answerToString(answers.letterScenario) } }],
+      ChallengeLetter: {
+        rich_text: [{ text: { content: answerToString(answers.challengeLetter) } }],
+      },
+      ScenarioAppointments: {
+        rich_text: [{ text: { content: answerToString(answers.scenarioAppointments) } }],
+      },
+      ChallengeAppointments: {
+        rich_text: [{ text: { content: answerToString(answers.challengeAppointments) } }],
+      },
+      ScenarioForm: {
+        rich_text: [{ text: { content: answerToString(answers.scenarioForm) } }],
+      },
+      ChallengeForm: {
+        rich_text: [{ text: { content: answerToString(answers.challengeForm) } }],
       },
       HelpSource: {
         rich_text: [{ text: { content: answerToString(answers.helpSource) } }],

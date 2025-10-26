@@ -7,10 +7,10 @@
 const DEEPL_API_KEY = '0834a132-2c79-412f-8043-733d0ca4badb:fx' // ← Hier eintragen!
 
 // Konfiguration
-const SOURCE_FILE = './src/survey/locales/de.json'
-const OUTPUT_DIR = './src/survey/locales/'
+const SOURCE_FILE = './src/userSurvey/locales/de.json'
+const OUTPUT_DIR = './src/userSurvey/locales/'
 const SOURCE_LANG = 'de'
-const TARGET_LANGUAGES = ['ro', 'zh']
+const TARGET_LANGUAGES = ['ar', 'en', 'fr', 'ro', 'ru', 'tr', 'uk', 'zh']
 
 // Rate Limiting (wichtig!)
 const DELAY_BETWEEN_REQUESTS = 500 // 500ms = langsamer, aber sicherer

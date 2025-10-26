@@ -50,32 +50,89 @@
           "rarely": "Rarement"
         }
       },
-      "challenges": {
-        "question": "Qu'est-ce que tu trouves le plus difficile quand tu parles à une autorité ?",
+      "scenarioLetter": {
+        "question": "Imagine un peu : Tu reçois une lettre de l'Office des étrangers. Que fais-tu en premier ?",
         "hint": "Choisis jusqu'à 3 réponses",
         "options": {
-          "language": "La langue est trop compliquée",
-          "documents": "Je ne sais pas de quels documents j'ai besoin",
-          "deadlines": "Je ne comprends pas les délais",
-          "forms": "Remplir des formulaires est difficile",
-          "organization": "Je ne trouve pas mes documents",
-          "help": "Je ne sais pas où trouver de l'aide",
-          "appointments": "Les rendez-vous sont difficiles à obtenir",
+          "self": "Je le lis moi-même et le comprends la plupart du temps",
+          "ask": "Je le lis, mais je dois demander à quelqu'un",
+          "useApp": "J'utilise Google Translate",
+          "photo": "J'envoie une photo par WhatsApp",
+          "help": "Je vais au centre de conseil",
+          "waitForHelp": "J'attends de rencontrer quelqu'un",
+          "wait": "Je le mets de côté pour le moment",
           "other": "Autres"
         },
         "otherPlaceholder": "Quoi d'autre ?"
       },
-      "letterScenario": {
-        "question": "Imagine un peu : Tu reçois une lettre du Jobcenter. Qu'est-ce que tu fais en premier ?",
+      "challengeLetter": {
+        "question": "Qu'est-ce qui est le plus difficile ?",
+        "hint": "Choisis jusqu'à 3 réponses",
         "options": {
-          "understand": "Je le lis moi-même et le comprends la plupart du temps",
-          "askHelp": "Je le lis, mais je dois demander à quelqu'un",
-          "translate": "J'utilise Google Translate ou des applications similaires",
-          "giveAwayDirect": "Je prends une photo et je l'envoie par WhatsApp à une personne",
-          "giveAwayOnline": "J'attends de rencontrer une personne qui puisse m'aider",
-          "giveAwayOrganisation": "Je vais voir un centre de conseil ou une assistante sociale:in",
-          "postpone": "Je le mets de côté pour le moment"
-        }
+          "language": "La langue est trop compliquée",
+          "knowledge": "Savoir ce que je dois faire",
+          "deadline": "Reconnaître le délai",
+          "getHelp": "Je ne sais pas où trouver de l'aide",
+          "fear": "J'ai tout de suite peur qu'il y ait un problème.",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
+      },
+      "scenarioAppointments": {
+        "question": "Imagine un peu : Tu as besoin d'un rendez-vous au bureau des citoyens. Que fais-tu ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "call": "J'appelle",
+          "walkIn": "J'y vais en personne",
+          "online": "Je réserve en ligne",
+          "getHelp": "Je demande à quelqu'un de m'aider",
+          "wait": "Je le reporte / je le fais plus tard",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
+      },
+      "challengeAppointments": {
+        "question": "Qu'est-ce qui est le plus difficile ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "responsibility": "Savoir quelle autorité est compétente",
+          "language": "Expliquer en allemand que j'ai besoin d'un rendez-vous",
+          "findInfomation": "Tu trouveras les coordonnées de l'autorité",
+          "askForHelp": "Demander de l'aide à quelqu'un",
+          "fear": "J'ai peur parce que je ne sais pas à quoi m'attendre lors de ce rendez-vous",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
+      },
+      "scenarioForm": {
+        "question": "Imagine un peu : Tu dois remplir une demande de prise en charge des frais auprès du Jobcenter. Qu'est-ce que tu fais ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "call": "Je le remplis moi-même",
+          "walkIn": "Je le remplis avec l'aide de quelqu'un",
+          "wait": "J'utilise une application ou une aide en ligne",
+          "online": "Je vais au centre de conseil",
+          "getHelp": "Je n'essaie pas / j'abandonne",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
+      },
+      "challengeForm": {
+        "question": "Qu'est-ce qui est le plus difficile ?",
+        "hint": "Choisis jusqu'à 3 réponses",
+        "options": {
+          "language": "Comprendre les questions",
+          "fillOut": "Saisir correctement mes données",
+          "write": "Écrire en allemand",
+          "digital": "Remplir un formulaire sur ton téléphone portable ou ton ordinateur",
+          "attachments": "Savoir quels documents je dois joindre",
+          "deadlines": "Comprendre les délais",
+          "knowInfomation": "Savoir les informations dont tu as besoin",
+          "askForHelp": "Demander de l'aide à quelqu'un",
+          "fear": "J'ai très peur de faire des erreurs.",
+          "other": "Autres"
+        },
+        "otherPlaceholder": "Quoi d'autre ?"
       },
       "helpSource": {
         "question": "Qui t'aide habituellement dans tes démarches administratives ?",
@@ -144,7 +201,6 @@
     "thanks": {
       "title": "Merci beaucoup ! 🙏",
       "message": "Tes réponses nous aideront à développer une application qui sera vraiment utile.",
-      "next": "Nous utiliserons les résultats pour rendre zetteln encore meilleur.",
       "home": "Vers la page d'accueil"
     },
     "errors": {

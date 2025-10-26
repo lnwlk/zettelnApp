@@ -50,32 +50,89 @@
           "rarely": "罕见"
         }
       },
-      "challenges": {
-        "question": "与权威人士交谈时，您觉得最困难的是什么？",
+      "scenarioLetter": {
+        "question": "想象一下：您收到一封来自移民局的信。你首先会做什么？",
         "hint": "最多选择 3 个答案",
         "options": {
-          "language": "语言太复杂",
-          "documents": "我不知道我需要哪些文件",
-          "deadlines": "我不明白最后期限",
-          "forms": "填写表格很困难",
-          "organization": "我找不到我的文件",
-          "help": "我不知道去哪里寻求帮助",
-          "appointments": "预约难",
+          "self": "我自己读过，大部分时候都能理解",
+          "ask": "我读了，但我要问一个人",
+          "useApp": "我使用谷歌翻译",
+          "photo": "我通过 WhatsApp 发送照片",
+          "help": "我去咨询中心",
+          "waitForHelp": "我等待，直到遇见某人",
+          "wait": "我暂时把它放在一边",
           "other": "其他"
         },
         "otherPlaceholder": "还有什么？"
       },
-      "letterScenario": {
-        "question": "想象一下：您收到了就业中心的来信。你首先会做什么？",
+      "challengeLetter": {
+        "question": "最困难的部分是什么？",
+        "hint": "最多选择 3 个答案",
         "options": {
-          "understand": "我自己读过，大部分时候都能理解",
-          "askHelp": "我读了，但我要问一个人",
-          "translate": "我使用谷歌翻译或类似的应用程序",
-          "giveAwayDirect": "我拍了一张照片并通过 WhatsApp 发送给对方",
-          "giveAwayOnline": "我一直在等待，直到遇到一个能帮助我的人",
-          "giveAwayOrganisation": "我向咨询中心或社会工作者求助",
-          "postpone": "我暂时把它放在一边"
-        }
+          "language": "语言太复杂",
+          "knowledge": "知道我要做什么",
+          "deadline": "认识最后期限",
+          "getHelp": "我不知道去哪里寻求帮助",
+          "fear": "我立刻害怕出问题",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
+      },
+      "scenarioAppointments": {
+        "question": "试想一下：您需要在公民登记处预约。您该怎么办？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "call": "我会打电话",
+          "walkIn": "我亲自去",
+          "online": "我在网上预订",
+          "getHelp": "我请人帮忙",
+          "wait": "我会推迟/以后再做",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
+      },
+      "challengeAppointments": {
+        "question": "最困难的部分是什么？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "responsibility": "了解由哪个部门负责",
+          "language": "用德语说明我需要预约",
+          "findInfomation": "该机构的详细联系方式如下",
+          "askForHelp": "向他人寻求帮助",
+          "fear": "我很害怕，因为我不知道在预约时会遇到什么情况",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
+      },
+      "scenarioForm": {
+        "question": "想象一下：您必须在就业中心填写费用保险申请表。你该怎么办？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "call": "我自己填写",
+          "walkIn": "我在别人的帮助下填写",
+          "wait": "我使用应用程序或在线帮助",
+          "online": "我去咨询中心",
+          "getHelp": "我不尝试/放弃",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
+      },
+      "challengeForm": {
+        "question": "最困难的部分是什么？",
+        "hint": "最多选择 3 个答案",
+        "options": {
+          "language": "了解问题",
+          "fillOut": "正确输入我的数据",
+          "write": "用德语书写",
+          "digital": "在手机或电脑上填写表格",
+          "attachments": "了解我需要附上哪些文件",
+          "deadlines": "了解截止日期",
+          "knowInfomation": "了解您需要的信息",
+          "askForHelp": "向他人寻求帮助",
+          "fear": "我很害怕自己会犯错误",
+          "other": "其他"
+        },
+        "otherPlaceholder": "还有什么？"
       },
       "helpSource": {
         "question": "通常谁会帮助您处理公务？",
@@ -144,7 +201,6 @@
     "thanks": {
       "title": "非常感谢！🙏",
       "message": "您的回答将有助于我们开发一款真正有用的应用程序。",
-      "next": "我们将利用这些结果使zetteln变得更好。",
       "home": "返回主页"
     },
     "errors": {

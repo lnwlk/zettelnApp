@@ -50,32 +50,89 @@
           "rarely": "Nadir"
         }
       },
-      "challenges": {
-        "question": "Bir yetkili ile konuşurken en çok neyi zor buluyorsunuz?",
+      "scenarioLetter": {
+        "question": "Şunu hayal edin: Göçmenlik bürosundan bir mektup alıyorsunuz. İlk olarak ne yaparsınız?",
         "hint": "En fazla 3 cevap seçin",
         "options": {
-          "language": "Dil çok karmaşık",
-          "documents": "Hangi belgelere ihtiyacım olduğunu bilmiyorum",
-          "deadlines": "Son teslim tarihlerini anlamıyorum.",
-          "forms": "Formları doldurmak zor",
-          "organization": "Belgelerimi bulamıyorum",
-          "help": "Nereden yardım alacağımı bilmiyorum.",
-          "appointments": "Randevu almak çok zor",
+          "self": "Ben de okudum ve çoğu zaman anladım",
+          "ask": "Okudum ama birine sormam gerek.",
+          "useApp": "Google Translate kullanıyorum",
+          "photo": "WhatsApp üzerinden bir fotoğraf gönderiyorum",
+          "help": "Danışma merkezine gidiyorum",
+          "waitForHelp": "Biriyle tanışana kadar beklerim.",
+          "wait": "Şimdilik bir kenara koyuyorum.",
           "other": "Diğer"
         },
         "otherPlaceholder": "Başka ne var?"
       },
-      "letterScenario": {
-        "question": "Şunu hayal edin: İş bulma kurumundan bir mektup aldınız. İlk olarak ne yaparsınız?",
+      "challengeLetter": {
+        "question": "En zor kısmı nedir?",
+        "hint": "En fazla 3 cevap seçin",
         "options": {
-          "understand": "Ben de okudum ve çoğu zaman anladım",
-          "askHelp": "Okudum ama birine sormam gerek.",
-          "translate": "Google Translate veya benzeri uygulamaları kullanıyorum",
-          "giveAwayDirect": "Bir fotoğraf çekiyorum ve WhatsApp aracılığıyla bir kişiye gönderiyorum",
-          "giveAwayOnline": "Bana yardım edebilecek biriyle tanışana kadar beklerim.",
-          "giveAwayOrganisation": "Bir danışma merkezine veya sosyal hizmet uzmanına giderim",
-          "postpone": "Şimdilik bir kenara koydum."
-        }
+          "language": "Dil çok karmaşık",
+          "knowledge": "Ne yapmam gerektiğini biliyorum",
+          "deadline": "Son tarihin tanınması",
+          "getHelp": "Nereden yardım alacağımı bilmiyorum.",
+          "fear": "Hemen bir sorun var diye korkuyorum",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
+      },
+      "scenarioAppointments": {
+        "question": "Bir hayal edin: Vatandaş Kayıt Bürosundan randevu almanız gerekiyor. Ne yaparsınız?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "call": "Arayacağım.",
+          "walkIn": "Oraya bizzat gideceğim.",
+          "online": "Online rezervasyon yapıyorum",
+          "getHelp": "Birinden bana yardım etmesini istiyorum",
+          "wait": "Erteleyeceğim / daha sonra yapacağım",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
+      },
+      "challengeAppointments": {
+        "question": "En zor kısmı nedir?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "responsibility": "Hangi makamın sorumlu olduğunu bilin",
+          "language": "Randevuya ihtiyacım olduğunu Almanca olarak açıklayın",
+          "findInfomation": "Yetkilinin iletişim bilgileri aşağıda yer almaktadır",
+          "askForHelp": "Birinden yardım isteyin",
+          "fear": "Korkuyorum çünkü randevuda ne bekleyeceğimi bilmiyorum",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
+      },
+      "scenarioForm": {
+        "question": "Şunu hayal edin: İş bulma merkezinde masrafları karşılamak için bir başvuru formu doldurmanız gerekiyor. Ne yapıyorsunuz?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "call": "Kendim dolduruyorum.",
+          "walkIn": "Birinin yardımıyla dolduruyorum.",
+          "wait": "Bir uygulama veya çevrimiçi yardım kullanıyorum",
+          "online": "Danışma merkezine gidiyorum",
+          "getHelp": "Denemem / vazgeçmem",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
+      },
+      "challengeForm": {
+        "question": "En zor kısmı nedir?",
+        "hint": "En fazla 3 cevap seçin",
+        "options": {
+          "language": "Soruları anlamak",
+          "fillOut": "Verilerimi doğru girin",
+          "write": "Almanca yazın",
+          "digital": "Cep telefonunuzdan veya bilgisayarınızdan bir form doldurun",
+          "attachments": "Hangi belgeleri eklemem gerektiğini biliyorum",
+          "deadlines": "Son teslim tarihlerinin anlaşılması",
+          "knowInfomation": "İhtiyacınız olan bilgileri bilin",
+          "askForHelp": "Birinden yardım isteyin",
+          "fear": "Hata yapmaktan çok korkuyorum",
+          "other": "Diğer"
+        },
+        "otherPlaceholder": "Başka ne var?"
       },
       "helpSource": {
         "question": "Normalde resmi konularda size kim yardımcı oluyor?",
@@ -144,7 +201,6 @@
     "thanks": {
       "title": "Çok teşekkür ederim! 🙏",
       "message": "Cevaplarınız gerçekten faydalı bir uygulama geliştirmemize yardımcı olacaktır.",
-      "next": "Sonuçları zetteln'i daha da iyi hale getirmek için kullanacağız.",
       "home": "Ana sayfaya"
     },
     "errors": {

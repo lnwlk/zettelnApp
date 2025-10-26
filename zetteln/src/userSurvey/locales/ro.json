@@ -50,32 +50,89 @@
           "rarely": "Rare"
         }
       },
-      "challenges": {
-        "question": "Ce vi se pare cel mai dificil atunci când vorbiți cu o autoritate?",
+      "scenarioLetter": {
+        "question": "Imaginați-vă acest lucru: Primiți o scrisoare de la biroul de imigrări. Ce faceți mai întâi?",
         "hint": "Alegeți până la 3 răspunsuri",
         "options": {
-          "language": "Limba este prea complicată",
-          "documents": "Nu știu de ce documente am nevoie",
-          "deadlines": "Nu înțeleg termenele limită",
-          "forms": "Completarea formularelor este dificilă",
-          "organization": "Nu-mi pot găsi documentele",
-          "help": "Nu știu unde să obțin ajutor",
-          "appointments": "Programările sunt greu de obținut",
+          "self": "O citesc și eu și o înțeleg de cele mai multe ori",
+          "ask": "Am citit-o, dar trebuie să întreb pe cineva",
+          "useApp": "Eu folosesc Google Translate",
+          "photo": "Trimit o fotografie prin WhatsApp",
+          "help": "Merg la centrul de consiliere",
+          "waitForHelp": "Aștept până întâlnesc pe cineva",
+          "wait": "Am pus-o deoparte pentru moment",
           "other": "Altele"
         },
         "otherPlaceholder": "Ce altceva?"
       },
-      "letterScenario": {
-        "question": "Imaginați-vă acest lucru: Primiți o scrisoare de la agenția pentru ocuparea forței de muncă. Ce faceți mai întâi?",
+      "challengeLetter": {
+        "question": "Care este partea cea mai dificilă?",
+        "hint": "Alegeți până la 3 răspunsuri",
         "options": {
-          "understand": "O citesc și eu și o înțeleg de cele mai multe ori",
-          "askHelp": "Am citit-o, dar trebuie să întreb pe cineva",
-          "translate": "Eu folosesc Google Translate sau aplicații similare",
-          "giveAwayDirect": "Fac o fotografie și o trimit unei persoane prin WhatsApp",
-          "giveAwayOnline": "Aștept până întâlnesc o persoană care mă poate ajuta",
-          "giveAwayOrganisation": "Merg la un centru de consiliere sau la un asistent social",
-          "postpone": "Am pus-o deoparte pentru moment"
-        }
+          "language": "Limba este prea complicată",
+          "knowledge": "Știu ce trebuie să fac",
+          "deadline": "Recunoașterea termenului limită",
+          "getHelp": "Nu știu unde să obțin ajutor",
+          "fear": "Mă sperii imediat că există o problemă",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
+      },
+      "scenarioAppointments": {
+        "question": "Imaginați-vă: Aveți nevoie de o programare la Biroul de înregistrare a cetățenilor. Ce trebuie să faceți?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "call": "Voi suna",
+          "walkIn": "Merg acolo în persoană",
+          "online": "Rezervare online",
+          "getHelp": "Îi cer cuiva să mă ajute",
+          "wait": "O voi amâna / o voi face mai târziu",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
+      },
+      "challengeAppointments": {
+        "question": "Care este partea cea mai dificilă?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "responsibility": "Să știți care este autoritatea responsabilă",
+          "language": "Explică în germană că am nevoie de o programare",
+          "findInfomation": "Datele de contact ale autorității pot fi găsite",
+          "askForHelp": "Cereți ajutorul cuiva",
+          "fear": "Sunt speriată pentru că nu știu la ce să mă aștept la programare",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
+      },
+      "scenarioForm": {
+        "question": "Imaginați-vă acest lucru: Trebuie să completați o cerere pentru acoperirea costurilor la agenția pentru ocuparea forței de muncă. Ce trebuie să faceți?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "call": "Îl completez eu însumi",
+          "walkIn": "Îl completez cu ajutorul cuiva",
+          "wait": "Folosesc o aplicație sau ajutor online",
+          "online": "Merg la centrul de consiliere",
+          "getHelp": "Nu încerc / nu renunț",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
+      },
+      "challengeForm": {
+        "question": "Care este partea cea mai dificilă?",
+        "hint": "Alegeți până la 3 răspunsuri",
+        "options": {
+          "language": "Înțelegerea întrebărilor",
+          "fillOut": "Introduceți corect datele mele",
+          "write": "Scrieți în germană",
+          "digital": "Completați un formular de pe telefonul mobil sau computer",
+          "attachments": "Să știu ce documente trebuie să anexez",
+          "deadlines": "Înțelegerea termenelor limită",
+          "knowInfomation": "Cunoașteți informațiile de care aveți nevoie",
+          "askForHelp": "Cereți ajutorul cuiva",
+          "fear": "Mi-e foarte teamă că aș putea face greșeli",
+          "other": "Altele"
+        },
+        "otherPlaceholder": "Ce altceva?"
       },
       "helpSource": {
         "question": "Cine vă ajută în mod normal cu problemele oficiale?",
@@ -99,7 +156,7 @@
         }
       },
       "organization": {
-        "question": "Cum vă organizați documentele importante?",
+        "question": "Wie organisierst du deine wichtigen Dokumente?",
         "hint": "Selecție multiplă posibilă",
         "options": {
           "folder": "Am un dosar acasă",
@@ -119,7 +176,7 @@
         }
       },
       "appPriorities": {
-        "question": "Imaginați-vă acest lucru: O aplicație te ajută cu literele. Ce este cel mai important pentru tine?",
+        "question": "Imaginează-ți asta: O aplicație te ajută cu literele. Ce este cel mai important pentru tine?",
         "hint": "Alegeți până la 3 răspunsuri",
         "options": {
           "privacy": "Datele mele rămân private și nu vor fi transmise mai departe",
@@ -144,7 +201,6 @@
     "thanks": {
       "title": "Vă mulțumim foarte mult! 🙏",
       "message": "Răspunsurile dvs. ne vor ajuta să dezvoltăm o aplicație cu adevărat utilă.",
-      "next": "Vom folosi rezultatele pentru a face zetteln și mai bun.",
       "home": "La pagina de pornire"
     },
     "errors": {

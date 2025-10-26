@@ -1,5 +1,5 @@
-// Fragendefinitionen für die Umfrage
 export const questions = [
+  // Allgemeines
   {
     id: 'languages',
     type: 'multiple',
@@ -20,19 +20,45 @@ export const questions = [
     section: 'about',
     required: false,
   },
+  // Scenarios
   {
-    id: 'challenges',
-    type: 'multiple',
-    section: 'challenges',
-    hasOther: true,
-    required: false,
-  },
-  {
-    id: 'letterScenario',
+    id: 'scenarioLetter',
     type: 'single',
     section: 'challenges',
     required: false,
   },
+  {
+    id: 'challengeLetter',
+    type: 'multiple',
+    section: 'challenges',
+    required: false,
+  },
+  {
+    id: 'scenarioAppointments',
+    type: 'single',
+    section: 'challenges',
+    required: false,
+  },
+  {
+    id: 'challengeAppointments',
+    type: 'multiple',
+    section: 'challenges',
+    required: false,
+  },
+  {
+    id: 'scenarioForm',
+    type: 'single',
+    section: 'challenges',
+    required: false,
+  },
+  {
+    id: 'challengeForm',
+    type: 'multiple',
+    section: 'challenges',
+    required: false,
+  },
+
+  // More question
   {
     id: 'helpSource',
     type: 'multiple',
@@ -74,7 +100,7 @@ export const questions = [
     section: 'wishes',
     required: false,
   },
-
+  // Contact
   {
     id: 'email',
     type: 'email',

@@ -59,35 +59,91 @@
         }
       },
 
-      "challenges": {
-        "question": "Was findest du am schwierigsten wenn du mit einer Behörde sprichst?",
+      "scenarioLetter": {
+        "question": "Stell dir vor: Du bekommst einen Brief von der Ausländerbehörde. Was machst du zuerst?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "self": "Ich lese ihn selbst und verstehe ihn meistens",
+          "ask": "Ich lese ihn, aber muss jemanden fragen",
+          "useApp": "Ich benutze Google Translate",
+          "photo": "Ich schicke ein Foto per WhatsApp",
+          "help": "Ich gehe zur Beratungsstelle",
+          "waitForHelp": "Ich warte bis ich jemanden treffe",
+          "wait": "Ich lege ihn erstmal zur Seite",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
+      },
+      "challengeLetter": {
+        "question": "Was ist dabei am schwierigsten?",
         "hint": "Wähle bis zu 3 Antworten",
         "options": {
           "language": "Die Sprache ist zu kompliziert",
-          "documents": "Ich weiß nicht, welche Dokumente ich brauche",
-          "deadlines": "Ich verstehe die Fristen nicht",
-          "forms": "Formulare ausfüllen ist schwer",
-          "organization": "Ich finde meine Dokumente nicht",
-          "help": "Ich weiß nicht, wo ich Hilfe bekomme",
-          "appointments": "Termine sind schwer zu bekommen",
+          "knowledge": "Wissen was ich tun muss",
+          "deadline": "Die Frist erkennen",
+          "getHelp": "Ich weiß nicht, wo ich Hilfe bekomme",
+          "fear": "Ich bekomme sofort Angst, das es ein Problem gibt",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
+      },
+      "scenarioAppointments": {
+        "question": "Stell dir vor: Du brauchst einen Termin beim Bürgeramt. Was machst du?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "call": "Ich rufe an",
+          "walkIn": "Ich gehe persönlich hin",
+          "online": "Ich buche online",
+          "getHelp": "Ich frage jemanden, mir zu helfen",
+          "wait": "Ich verschiebe es / mache es später",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
+      },
+      "challengeAppointments": {
+        "question": "Was ist dabei am schwierigsten?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "responsibility": "Wissen, welche Behörde zuständig ist",
+          "language": "Auf Deutsch erklären, dass ich einen Termin brauche",
+          "findInfomation": "Die Kontaktdaten der Behörde finden",
+          "askForHelp": "Jemanden um Hilfe bitten",
+          "fear": "Ich habe Angst, weil ich nicht weiß, was mich bei dem Termin erwartet",
           "other": "Andere"
         },
         "otherPlaceholder": "Was noch?"
       },
 
-      "letterScenario": {
-        "question": "Stell dir vor: Du bekommst einen Brief vom Jobcenter. Was machst du zuerst?",
+      "scenarioForm": {
+        "question": "Stell dir vor: Du musst einen Antrag auf Kostenübernahme beim Jobcenter ausfüllen. Was machst du?",
+        "hint": "Wähle bis zu 3 Antworten",
         "options": {
-          "understand": "Ich lese ihn selbst und verstehe ihn meistens",
-          "askHelp": "Ich lese ihn, aber muss jemanden fragen",
-          "translate": "Ich benutze Google Translate oder ähnliche Apps",
-          "giveAwayDirect": "Ich mache ein Foto und schicke es per WhatsApp einer Person",
-          "giveAwayOnline": "Ich warte bis ich eine Person treffe, die mir helfen kann",
-          "giveAwayOrganisation": "Ich gehe zu einer Beratungsstelle oder einer Sozialarbeiter:in",
-          "postpone": "Ich lege ihn erstmal zur Seite"
-        }
+          "call": "Ich fülle ihn selbst aus",
+          "walkIn": "Ich fülle ihn mit Hilfe von jemandem aus",
+          "wait": "Ich nutze eine App oder Online-Hilfe",
+          "online": "Ich gehe zur Beratungsstelle",
+          "getHelp": "Ich versuche es nicht / gebe auf",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
       },
-
+      "challengeForm": {
+        "question": "Was ist dabei am schwierigsten?",
+        "hint": "Wähle bis zu 3 Antworten",
+        "options": {
+          "language": "Die Fragen verstehen",
+          "fillOut": "Meine Daten richtig eintragen",
+          "write": "Auf Deutsch schreiben",
+          "digital": "Ein Formular am Handy oder Computer ausfüllen",
+          "attachments": "Wissen welche Dokumente ich beilegen muss",
+          "deadlines": "Die Fristen verstehen",
+          "knowInfomation": "Die benötigten Infomationen wissen",
+          "askForHelp": "Jemanden um Hilfe bitten",
+          "fear": "Ich habe große Angst, das ich Fehler machen könnte",
+          "other": "Andere"
+        },
+        "otherPlaceholder": "Was noch?"
+      },
       "helpSource": {
         "question": "Wer hilft dir normalerweise bei Behördensachen?",
         "hint": "Mehrfachauswahl möglich",

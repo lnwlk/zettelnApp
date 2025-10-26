@@ -50,35 +50,92 @@
           "rarely": "Rare"
         }
       },
-      "challenges": {
-        "question": "What do you find most difficult when talking to an authority?",
+      "scenarioLetter": {
+        "question": "Imagine this: You receive a letter from the immigration office. What do you do first?",
         "hint": "Choose up to 3 answers",
         "options": {
-          "language": "The language is too complicated",
-          "documents": "I don't know which documents I need",
-          "deadlines": "I don't understand the deadlines",
-          "forms": "Filling out forms is difficult",
-          "organization": "I can't find my documents",
-          "help": "I don't know where to get help",
-          "appointments": "Appointments are hard to come by",
+          "self": "I read it myself and understand it most of the time",
+          "ask": "I read it, but I have to ask someone",
+          "useApp": "I use Google Translate",
+          "photo": "I send a photo via WhatsApp",
+          "help": "I go to the advice center",
+          "waitForHelp": "I wait until I meet someone",
+          "wait": "I put it aside for now",
           "other": "Other"
         },
         "otherPlaceholder": "What else?"
       },
-      "letterScenario": {
-        "question": "Imagine this: You receive a letter from the Jobcenter. What do you do first?",
+      "challengeLetter": {
+        "question": "What is the most difficult part?",
+        "hint": "Choose up to 3 answers",
         "options": {
-          "understand": "I read it myself and understand it most of the time",
-          "askHelp": "I read it, but I have to ask someone",
-          "translate": "I use Google Translate or similar apps",
-          "giveAwayDirect": "I take a photo and send it to a person via WhatsApp",
-          "giveAwayOnline": "I wait until I meet a person who can help me",
-          "giveAwayOrganisation": "I go to a counseling center or a social worker",
-          "postpone": "I put it aside for now"
-        }
+          "language": "The language is too complicated",
+          "knowledge": "Know what I have to do",
+          "deadline": "Recognize the deadline",
+          "getHelp": "I don't know where to get help",
+          "fear": "I immediately get scared that there is a problem",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
+      },
+      "scenarioAppointments": {
+        "question": "Just imagine: You need an appointment at the citizens' office. What do you do?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "call": "I will call",
+          "walkIn": "I am going in person",
+          "online": "I book online",
+          "getHelp": "I ask someone to help me",
+          "wait": "I'll postpone it / do it later",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
+      },
+      "challengeAppointments": {
+        "question": "What is the most difficult part?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "responsibility": "Know which authority is responsible",
+          "language": "Explain in German that I need an appointment",
+          "findInfomation": "The contact details of the authority can be found",
+          "askForHelp": "Ask someone for help",
+          "fear": "I'm scared because I don't know what to expect at the appointment",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
+      },
+      "scenarioForm": {
+        "question": "Imagine this: You have to fill out an application for cost coverage at the job center. What do you do?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "call": "I fill it out myself",
+          "walkIn": "I fill it out with the help of someone",
+          "wait": "I use an app or online help",
+          "online": "I go to the advice center",
+          "getHelp": "I don't try / give up",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
+      },
+      "challengeForm": {
+        "question": "What is the most difficult part?",
+        "hint": "Choose up to 3 answers",
+        "options": {
+          "language": "Understanding the questions",
+          "fillOut": "Enter my data correctly",
+          "write": "Write in German",
+          "digital": "Fill out a form on your cell phone or computer",
+          "attachments": "Know which documents I need to enclose",
+          "deadlines": "Understanding the deadlines",
+          "knowInfomation": "Know the information you need",
+          "askForHelp": "Ask someone for help",
+          "fear": "I am very afraid that I might make mistakes",
+          "other": "Other"
+        },
+        "otherPlaceholder": "What else?"
       },
       "helpSource": {
-        "question": "Who normally helps you with official matters?",
+        "question": "Who usually helps you with official matters?",
         "hint": "Multiple selection possible",
         "options": {
           "family": "Family or friends",
@@ -137,14 +194,13 @@
         "placeholder": "Write your ideas here..."
       },
       "email": {
-        "question": "Share your e-mail with us so that we can inform you about the project",
+        "question": "Share your e-mail with us so that we can keep you informed about the project",
         "placeholder": "deine@email.de"
       }
     },
     "thanks": {
       "title": "Thank you very much! 🙏",
       "message": "Your answers will help us to develop an app that is really useful.",
-      "next": "We will use the results to make zetteln even better.",
       "home": "To the homepage"
     },
     "errors": {
