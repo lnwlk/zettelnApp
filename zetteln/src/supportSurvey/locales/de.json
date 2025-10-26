@@ -1,0 +1,75 @@
+{
+  "supportSurvey": {
+    "title": "Unterstütze das zetteln Projekt",
+    "duration": "Dauer: ca. 2 Minuten",
+    "anonymous": "Deine Daten werden sicher gespeichert",
+
+    "navigation": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "submit": "Absenden",
+      "skip": "Überspringen"
+    },
+
+    "progress": "Frage {{current}} von {{total}}",
+
+    "consent": {
+      "title": "Einwilligung",
+      "text": "Ich bin einverstanden, dass meine Kontaktdaten und Nachricht für die Zusammenarbeit mit dem zetteln Projekt verwendet werden. Deine Daten werden sicher gespeichert und nicht an Dritte weitergegeben. Bist du einverstanden?",
+      "yes": "Ja, ich stimme zu",
+      "no": "Nein"
+    },
+
+    "questions": {
+      "role": {
+        "question": "Was beschreibt deine Rolle am Besten?",
+        "options": {
+          "privatePerson": "Ich bin eine Privatperson / Ehrenamtliche",
+          "organization": "Ich bin Teil einer Organisation",
+          "administration": "Ich komme aus der Verwaltung",
+          "other": "Andere"
+        },
+        "followUpPlaceholder": "Bitte beschreibe deine Rolle"
+      },
+
+      "support": {
+        "question": "Wie kannst du unterstützen?",
+        "options": {
+          "testApp": "Ich möchte die App testen",
+          "integrateApp": "Ich möchte die App in ein bestehendes Hilfsangebot einbinden",
+          "shareExperience": "Ich möchte mein Erfahrung mit Behörden teilen / bei der Appentwicklung beraten",
+          "other": "Andere"
+        },
+        "followUpPlaceholder": "Wie möchtest du unterstützen?"
+      },
+
+      "name": {
+        "question": "Dein Name",
+        "placeholder": "Dein Name"
+      },
+
+      "email": {
+        "question": "Deine E-Mail",
+        "placeholder": "deine@email.de"
+      },
+
+      "message": {
+        "question": "Nachricht",
+        "placeholder": "Schreib uns deine Nachricht..."
+      }
+    },
+
+    "thanks": {
+      "title": "Vielen Dank! 🙏",
+      "message": "Wir haben deine Nachricht erhalten und werden uns bald bei dir melden.",
+      "next": "Gemeinsam machen wir zetteln besser!",
+      "home": "Zur Startseite"
+    },
+
+    "errors": {
+      "required": "Bitte fülle dieses Feld aus",
+      "maxSelections": "Du kannst maximal {{max}} Antworten wählen",
+      "generic": "Ein Fehler ist aufgetreten. Bitte versuche es erneut."
+    }
+  }
+}
