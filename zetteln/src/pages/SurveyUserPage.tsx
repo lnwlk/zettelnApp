@@ -1,6 +1,6 @@
 // @ts-ignore
-import Survey from '../survey/Survey'
-import '../survey/i18n'
+import Survey from '../userSurvey/Survey'
+import '../userSurvey/i18n'
 
 export default function SurveyUserPage() {
   return (
