@@ -21,34 +21,6 @@ export function ProgressBar({ current, total }) {
   )
 }
 
-export function LanguageSwitcher() {
-  const { i18n } = useTranslation()
-
-  const languages = [
-    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-    { code: 'en', label: 'English', flag: '🇬🇧' },
-  ]
-
-  return (
-    <div className="mb-6 flex flex-wrap justify-center gap-2">
-      {languages.map((lang) => (
-        <button
-          key={lang.code}
-          className={`rounded-full px-4 py-2 transition-all duration-200 ${
-            i18n.language === lang.code
-              ? 'bg-black-800 text-white shadow-md'
-              : 'hover:bg-sand-100 border border-gray-100 bg-white text-slate-700'
-          } `}
-          onClick={() => i18n.changeLanguage(lang.code)}
-        >
-          <span className="mr-1">{lang.flag}</span>
-          {lang.label}
-        </button>
-      ))}
-    </div>
-  )
-}
-
 export function ThankYouScreen() {
   const { t } = useTranslation()
 

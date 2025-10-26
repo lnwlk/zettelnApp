@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ConsentScreen from './components/ConsentScreen'
-import ProgressBar, { LanguageSwitcher, ThankYouScreen } from './components/ProgressBar'
+import ProgressBar, { ThankYouScreen } from './components/ProgressBar'
 import QuestionScreen from './components/QuestionScreen'
 import { questions } from './questions'
 
@@ -103,7 +103,6 @@ function SupportSurvey() {
     return (
       <div className="min-h-screen w-full px-4 py-8">
         <div className="mx-auto w-full md:max-w-2xl">
-          <LanguageSwitcher />
           <ConsentScreen onConsent={handleConsent} />
         </div>
       </div>
@@ -114,7 +113,6 @@ function SupportSurvey() {
     return (
       <div className="min-h-screen bg-slate-50 px-4 py-8">
         <div className="mx-auto max-w-2xl">
-          <LanguageSwitcher />
           <ThankYouScreen />
         </div>
       </div>
@@ -130,7 +128,6 @@ function SupportSurvey() {
         <div className="mb-8 text-center">
           <h1 className="mb-3 text-3xl md:text-4xl">{t('supportSurvey.title')}</h1>
         </div>
-        <LanguageSwitcher />
 
         <ProgressBar current={currentStep} total={questions.length} />
 

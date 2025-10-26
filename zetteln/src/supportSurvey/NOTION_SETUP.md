@@ -12,7 +12,7 @@ Create a new Notion database with the following properties:
 
 ### 2. **Language** (Text)
 - **Type**: Rich Text
-- **Description**: The language the user selected (de or en)
+- **Description**: The language code (always "de" for German)
 
 ### 3. **Role** (Text)
 - **Type**: Rich Text
