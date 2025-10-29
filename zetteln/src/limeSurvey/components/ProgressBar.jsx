@@ -7,7 +7,7 @@ const ProgressBar = ({ currentStep, totalSteps }) => {
     <div className="w-full mb-8">
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm font-medium text-gray-700">
-          Question {currentStep} of {totalSteps}
+          Frage {currentStep} von {totalSteps}
         </span>
         <span className="text-sm font-medium text-gray-700">{progress}%</span>
       </div>
@@ -40,9 +40,9 @@ export const ThankYouScreen = ({ onGoHome }) => {
             />
           </svg>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Thank You!</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Vielen Dank!</h2>
         <p className="text-lg text-gray-600 mb-8">
-          Your response has been submitted successfully.
+          Ihre Antwort wurde erfolgreich übermittelt.
         </p>
       </div>
       {onGoHome && (
@@ -50,7 +50,7 @@ export const ThankYouScreen = ({ onGoHome }) => {
           onClick={onGoHome}
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          Return to Home
+          Zurück zur Startseite
         </button>
       )}
     </div>

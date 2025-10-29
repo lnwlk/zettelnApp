@@ -4,17 +4,6 @@ import MultipleChoice from './questions/MultipleChoice';
 import TextInput from './questions/TextInput';
 
 const QuestionScreen = ({ question, value, onChange }) => {
-  const getQuestionLabel = (id) => {
-    const labels = {
-      name: 'Name',
-      email: 'Email Address',
-      question1: 'Question 1',
-      question2: 'Question 2',
-      message: 'Message'
-    };
-    return labels[id] || id;
-  };
-
   const renderInput = () => {
     switch (question.type) {
       case 'single':
@@ -34,7 +23,7 @@ const QuestionScreen = ({ question, value, onChange }) => {
     <div className="w-full max-w-2xl mx-auto">
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          {getQuestionLabel(question.id)}
+          {question.label}
           {question.required && <span className="text-red-500 ml-1">*</span>}
         </h2>
         {question.description && (

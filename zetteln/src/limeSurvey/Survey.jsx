@@ -102,7 +102,7 @@ const Survey = () => {
       setShowThankYou(true);
     } catch (error) {
       console.error('Error submitting survey:', error);
-      alert('Failed to submit survey. Please try again.');
+      alert('Fehler beim Absenden der Umfrage. Bitte versuchen Sie es erneut.');
     } finally {
       setIsSubmitting(false);
     }
@@ -125,8 +125,8 @@ const Survey = () => {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">LimeSurvey</h1>
-            <p className="text-gray-600">Please answer all required questions</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Umfrage</h1>
+            <p className="text-gray-600">Bitte beantworten Sie alle Pflichtfragen</p>
           </div>
 
           <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
@@ -149,7 +149,7 @@ const Survey = () => {
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
               >
-                Back
+                Zurück
               </button>
 
               {currentStep < totalSteps ? (
@@ -163,7 +163,7 @@ const Survey = () => {
                       : 'bg-blue-600 text-white hover:bg-blue-700'
                   }`}
                 >
-                  Next
+                  Weiter
                 </button>
               ) : (
                 <button
@@ -175,7 +175,7 @@ const Survey = () => {
                       : 'bg-green-600 text-white hover:bg-green-700'
                   }`}
                 >
-                  {isSubmitting ? 'Submitting...' : 'Submit'}
+                  {isSubmitting ? 'Wird gesendet...' : 'Absenden'}
                 </button>
               )}
             </div>

@@ -13,7 +13,7 @@ const TextInput = ({ question, value, onChange }) => {
           value={value || ''}
           onChange={handleChange}
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          placeholder="your.email@example.com"
+          placeholder={question.placeholder}
           required={question.required}
         />
       </div>
@@ -28,7 +28,7 @@ const TextInput = ({ question, value, onChange }) => {
           onChange={handleChange}
           rows={5}
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-          placeholder="Enter your message here..."
+          placeholder={question.placeholder}
           required={question.required}
         />
       </div>
@@ -43,7 +43,7 @@ const TextInput = ({ question, value, onChange }) => {
         value={value || ''}
         onChange={handleChange}
         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        placeholder="Enter your answer..."
+        placeholder={question.placeholder}
         required={question.required}
       />
     </div>
