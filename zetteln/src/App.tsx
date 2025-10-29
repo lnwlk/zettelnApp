@@ -5,6 +5,7 @@ import AppWaitlistPage from './pages/AppWaitlistPage'
 import HomePage from './pages/HomePage'
 import ImprintPage from './pages/ImprintPage'
 import SurveyUserPage from './pages/SurveyUserPage'
+import LimeSurveyPage from './pages/LimeSurveyPage'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/imprint" element={<ImprintPage />} />
         <Route path="/AppWaitlist" element={<AppWaitlistPage />} />
         <Route path="/SurveyUser" element={<SurveyUserPage />} />
+        <Route path="/LimeSurvey" element={<LimeSurveyPage />} />
       </Routes>
 
       <Footer />
